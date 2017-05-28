@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+            资源共享平台
+        </title>
+        <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport"/>
+        <link href="css/TothingWay.css" rel="stylesheet"/>
+        <link href="css/admin.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">
+                                IT.SHARE后台管理系统
+                            </span>
+                            <span class="icon-bar">
+                            </span>
+                            <span class="icon-bar">
+                            </span>
+                            <span class="icon-bar">
+                            </span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            IT.SHARE后台管理系统
+                        </a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav side-nav">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a role="button" href="index.html">
+                                        <i class="icon-dashboard">
+                                        </i>
+                                        本站概况
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a role="button" href="admin-set.html">
+                                        <i class="icon-cogs">
+                                        </i>
+                                        管理员设置
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <a role="button" data-toggle="collapse" data-parent=".side-nav" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                                        <i class="icon-user">
+                                        </i>
+                                        用户管理
+                                        <i class="icon icon-angle-left">
+                                        </i>
+                                    </a>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false">
+                                    <div class="panel-body">
+                                        <ul>
+                                           <li>
+                                                <a href="user-batch-management.html">
+                                                    用户批量管理
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="report-management.html"> 
+                                                    用户举报管理
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <a class="collapsed active" role="button" data-toggle="collapse" data-parent=".side-nav" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <i class="icon-tasks">
+                                        </i>
+                                        资源管理
+                                        <i class="icon icon-angle-down">
+                                        </i>
+                                    </a>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li>
+                                                <a href="resource-batch-management.html">
+                                                    资源批量管理
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="resource-audit.html">
+                                                    资源审核
+                                                </a>
+                                            </li>
+                                             <li>
+                                                <a href="uploading.html">
+                                                    资源上传
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent=".side-nav" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <i class="icon-group">
+                                        </i>
+                                        用户论坛管理
+                                        <i class="icon icon-angle-left">
+                                        </i>
+                                    </a>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li>
+                                                <a href="topic-management.html">
+                                                    主题管理
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="post-management.html">
+                                                    帖子管理
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="message-management.html">
+                                                    消息管理
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="statistics-recommend.html">
+                                                    统计与推荐
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFour">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent=".side-nav" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        <i class="icon-comments-alt">
+                                        </i>
+                                        在线问答管理
+                                        <i class="icon icon-angle-left">
+                                        </i>
+                                    </a>
+                                </div>
+                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                    <div class="panel-body">
+                                        <ul>
+                                             <li>
+                                                <a href="issues-management.html">
+                                                    问题管理
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="answer-management.html">
+                                                    回答管理
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="additional-content-management.html">
+                                                    追加管理
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="question-recommend.html">
+                                                    问答统计与推荐
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFour">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent=".side-nav" href="#collapseFive" aria-expanded="false" aria-controls="collapseFour">
+                                        <i class="icon-comments-alt">
+                                        </i>
+                                        知识库管理
+                                        <i class="icon icon-angle-left">
+                                        </i>
+                                    </a>
+                                </div>
+                                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li>
+                                                <a href="new-library.html">
+                                                    批量管理知识库
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="library-content-management.html">
+                                                    收录内容管理
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="library-recommend-check.html">
+                                                    推荐审核
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                           <li>
+                                <a href="filter-words-management.html">
+                                    <i class="icon-font">
+                                    </i>
+                                    过滤词汇管理
+                                </a>
+                            </li>
+                            <li>
+                                <a href="wipe-cache.html">
+                                    <i class="icon-trash">
+                                    </i>
+                                    清理缓存
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="icon-envelope">
+                                    </i>
+                                    Message
+                                    <span class="badge">
+                                        99+
+                                    </span>
+                                    <span class="caret">
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">
+                                            用户举报管理
+                                            <span class="badge">
+                                                42
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            资源审核
+                                            <span class="badge">
+                                                42
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            主题审核
+                                            <span class="badge">
+                                                42
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            帖子审核
+                                            <span class="badge">
+                                                42
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            消息审核
+                                            <span class="badge">
+                                                42
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            主题审核
+                                            <span class="badge">
+                                                42
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            回答审核
+                                            <span class="badge">
+                                                42
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            追加审核
+                                            <span class="badge">
+                                                42
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="icon-user">
+                                    </i>
+                                    Admin
+                                    <span class="caret">
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">
+                                            修改密码
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="page-wrapper">
+                <div class="clearfix">
+                    <div class="col-xs-12 col-md-6 upload-left">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <i class="glyphicon glyphicon-open">
+                                    </i>
+                                    资源上传
+                                </h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="btn-group btn-group-justified" role="group">
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            资源分类
+                                            <span class="caret">
+                                            </span>
+                                        </button>
+                                        <ul role="menu" class="dropdown-menu">
+                                            <li class="dropdown-submenu">
+                                                <a class="firstpart-for-resources" tabindex="-1" href="javascript:;">
+                                                    开发技术
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-position">
+                                                    <li>
+                                                        <a class="secondpart-for-resources" tabindex="-1" href="javascript:;">
+                                                            C语言
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            C#
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            C++
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            Java
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            Python
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            VB
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            Delphi
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            Perl
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            其他
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="firstpart-for-resources" tabindex="-1" href="javascript:;">
+                                                    移动开发
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-position">
+                                                    <li>
+                                                        <a class="secondpart-for-resources" tabindex="-1" href="javascript:;">
+                                                            Android
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            IOS
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            JavaMe
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            WinPhone
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            Node.js
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            其他
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="firstpart-for-resources" tabindex="-1" href="javascript:;">
+                                                    网站建设
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-position">
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            HTML+CSS
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            JavaScript
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            jQuery
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            PHP
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            .Net
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            J2EE
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            JSP
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            AJAX
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            其他
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="firstpart-for-resources" tabindex="-1" href="javascript:;">
+                                                    操作系统
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-position">
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            Windows
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            Linux
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            OS
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            Unix
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            桌面系统
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            其他
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="firstpart-for-resources" tabindex="-1" href="javascript:;">
+                                                    数据库
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-position">
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            Mysql
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            MongoDB
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            Oracle
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            Access
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            SQLServer
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            SQLite
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            其他
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="firstpart-for-resources" tabindex="-1" href="javascript:;">
+                                                    考试认证
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-position">
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            微软认证
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            思科认证
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            Oracle认证
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            华为认证
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            软考认证
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            其他
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            资源类型
+                                            <span class="caret">
+                                            </span>
+                                        </button>
+                                        <ul role="menu" class="dropdown-menu">
+                                            <li>
+                                                <a class="type-elem-for-resources" tabindex="-1" href="javascript:;">
+                                                    工具类
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="type-elem-for-resources" tabindex="-1" href="javascript:;">
+                                                    代码类
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="type-elem-for-resources" tabindex="-1" href="javascript:;">
+                                                    文档类
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="type-elem-for-resources" tabindex="-1" href="javascript:;">
+                                                    电子书
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="type-elem-for-resources" tabindex="-1" href="javascript:;">
+                                                    音频类
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            所需积分
+                                            <span class="caret">
+                                            </span>
+                                        </button>
+                                        <ul role="menu" class="dropdown-menu">
+                                            <li>
+                                                <a class="type-elem-for-resources" tabindex="-1" href="javascript:;">
+                                                    1
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="type-elem-for-resources" tabindex="-1" href="javascript:;">
+                                                    2
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="type-elem-for-resources" tabindex="-1" href="javascript:;">
+                                                    3
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="type-elem-for-resources" tabindex="-1" href="javascript:;">
+                                                    4
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="type-elem-for-resources" tabindex="-1" href="javascript:;">
+                                                    5
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control resource-name" placeholder="资源名称"/>
+                                <textarea class="form-control introduction" rows="3" placeholder="资源简介">
+                                </textarea>
+                                <p class="error-red">
+                                    &nbsp;
+                                    <span>
+                                        这里是报错信息
+                                    </span>
+                                </p>
+                                <a class="btn btn-info btn-block file-admin" href="#" role="button">
+                                    选择文件
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 upload-right">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <i class="glyphicon glyphicon-open">
+                                    </i>
+                                    资源批量上传
+                                </h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="btn-group btn-group-justified" role="group">
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            资源分类
+                                            <span class="caret">
+                                            </span>
+                                        </button>
+                                        <ul role="menu" class="dropdown-menu">
+                                            <li class="dropdown-submenu">
+                                                <a class="firstpart-for-resources" tabindex="-1" href="javascript:;">
+                                                    开发技术
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-position">
+                                                    <li>
+                                                        <a class="secondpart-for-resources" tabindex="-1" href="javascript:;">
+                                                            C语言
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            C#
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            C++
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            Java
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            Python
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            VB
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            Delphi
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            Perl
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            其他
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="firstpart-for-resources" tabindex="-1" href="javascript:;">
+                                                    移动开发
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-position">
+                                                    <li>
+                                                        <a class="secondpart-for-resources" tabindex="-1" href="javascript:;">
+                                                            Android
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            IOS
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            JavaMe
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            WinPhone
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            Node.js
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            其他
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="firstpart-for-resources" tabindex="-1" href="javascript:;">
+                                                    网站建设
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-position">
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            HTML+CSS
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            JavaScript
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            jQuery
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            PHP
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            .Net
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            J2EE
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            JSP
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            AJAX
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            其他
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="firstpart-for-resources" tabindex="-1" href="javascript:;">
+                                                    操作系统
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-position">
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            Windows
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            Linux
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            OS
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            Unix
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            桌面系统
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            其他
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="firstpart-for-resources" tabindex="-1" href="javascript:;">
+                                                    数据库
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-position">
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            Mysql
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            MongoDB
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            Oracle
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            Access
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            SQLServer
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            SQLite
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            其他
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="firstpart-for-resources" tabindex="-1" href="javascript:;">
+                                                    考试认证
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-position">
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            微软认证
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            思科认证
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            Oracle认证
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            华为认证
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            软考认证
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="secondpart-for-resources" href="javascript:;">
+                                                            其他
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            资源类型
+                                            <span class="caret">
+                                            </span>
+                                        </button>
+                                        <ul role="menu" class="dropdown-menu">
+                                            <li>
+                                                <a class="type-elem-for-resources" tabindex="-1" href="javascript:;">
+                                                    工具类
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="type-elem-for-resources" tabindex="-1" href="javascript:;">
+                                                    代码类
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="type-elem-for-resources" tabindex="-1" href="javascript:;">
+                                                    文档类
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="type-elem-for-resources" tabindex="-1" href="javascript:;">
+                                                    电子书
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="type-elem-for-resources" tabindex="-1" href="javascript:;">
+                                                    音频类
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            所需积分
+                                            <span class="caret">
+                                            </span>
+                                        </button>
+                                        <ul role="menu" class="dropdown-menu">
+                                            <li>
+                                                <a class="type-elem-for-resources" tabindex="-1" href="javascript:;">
+                                                    1
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="type-elem-for-resources" tabindex="-1" href="javascript:;">
+                                                    2
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="type-elem-for-resources" tabindex="-1" href="javascript:;">
+                                                    3
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="type-elem-for-resources" tabindex="-1" href="javascript:;">
+                                                    4
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="type-elem-for-resources" tabindex="-1" href="javascript:;">
+                                                    5
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control resource-name" placeholder="资源名称为上传文件名称" disabled/>
+                                <textarea class="form-control introduction" rows="3" placeholder="资源简介">
+                                </textarea>
+                                <p class="error-red">
+                                    &nbsp;
+                                    <span>
+                                        这里是报错信息
+                                    </span>
+                                </p>
+                                <a class="btn btn-info btn-block file-admin" href="#" role="button">
+                                    选择文件
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 upload-recorded">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <i class="glyphicon glyphicon-file">
+                                    </i>
+                                    上传记录
+                                </h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-hover table-striped tablesorter">
+                                        <thead>
+                                            <tr>
+                                                <th class="header">
+                                                    资源名称
+                                                </th>
+                                                <th class="header">
+                                                    上传时间
+                                                </th>
+                                                <th class="header">
+                                                    资源类型
+                                                </th>
+                                                <th class="header">
+                                                    所在板块
+                                                </th>
+                                                <th class="header">
+                                                    所需积分
+                                                </th>
+                                                <th class="header">
+                                                    资源大小
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    3326
+                                                </td>
+                                                <td>
+                                                    10/21/2013
+                                                </td>
+                                                <td>
+                                                    3:29 PM
+                                                </td>
+                                                <td>
+                                                    $321.33
+                                                </td>
+                                                <td>
+                                                    $321.33
+                                                </td>
+                                                <td>
+                                                    $321.33
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    3326
+                                                </td>
+                                                <td>
+                                                    10/21/2013
+                                                </td>
+                                                <td>
+                                                    3:29 PM
+                                                </td>
+                                                <td>
+                                                    $321.33
+                                                </td>
+                                                <td>
+                                                    $321.33
+                                                </td>
+                                                <td>
+                                                    $321.33
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    3326
+                                                </td>
+                                                <td>
+                                                    10/21/2013
+                                                </td>
+                                                <td>
+                                                    3:29 PM
+                                                </td>
+                                                <td>
+                                                    $321.33
+                                                </td>
+                                                <td>
+                                                    $321.33
+                                                </td>
+                                                <td>
+                                                    $321.33
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    3326
+                                                </td>
+                                                <td>
+                                                    10/21/2013
+                                                </td>
+                                                <td>
+                                                    3:29 PM
+                                                </td>
+                                                <td>
+                                                    $321.33
+                                                </td>
+                                                <td>
+                                                    $321.33
+                                                </td>
+                                                <td>
+                                                    $321.33
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    3326
+                                                </td>
+                                                <td>
+                                                    10/21/2013
+                                                </td>
+                                                <td>
+                                                    3:29 PM
+                                                </td>
+                                                <td>
+                                                    $321.33
+                                                </td>
+                                                <td>
+                                                    $321.33
+                                                </td>
+                                                <td>
+                                                    $321.33
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    3326
+                                                </td>
+                                                <td>
+                                                    10/21/2013
+                                                </td>
+                                                <td>
+                                                    3:29 PM
+                                                </td>
+                                                <td>
+                                                    $321.33
+                                                </td>
+                                                <td>
+                                                    $321.33
+                                                </td>
+                                                <td>
+                                                    $321.33
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    3326
+                                                </td>
+                                                <td>
+                                                    10/21/2013
+                                                </td>
+                                                <td>
+                                                    3:29 PM
+                                                </td>
+                                                <td>
+                                                    $321.33
+                                                </td>
+                                                <td>
+                                                    $321.33
+                                                </td>
+                                                <td>
+                                                    $321.33
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/TothingWay.js">
+        </script>
+        <script src="js/echarts.js">
+        </script>
+        <script src="js/admin.js">
+        </script>
+    </body>
+</html>

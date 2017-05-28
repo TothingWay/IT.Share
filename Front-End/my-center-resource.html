@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>
+            资源共享平台
+        </title>
+        <link rel="shortcut icon" href="http://oqlse9rck.bkt.clouddn.com/favicon.ico">
+        <link href="css/TothingWay.css" rel="stylesheet"/>
+        <link href="css/personal.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <nav class="navbar navbar-default nav-scroll navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">
+                            IT.Share
+                        </span>
+                        <span class="icon-bar">
+                        </span>
+                        <span class="icon-bar">
+                        </span>
+                        <span class="icon-bar">
+                        </span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        
+                    </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active">
+                            <a href="index.html">
+                                首页
+                            </a>
+                        </li>
+                        <li>
+                            <a href="resource-index.html">
+                                资料中心
+                            </a>
+                        </li>
+                        <li>
+                            <a href="forum-index.html">
+                                交流分享
+                            </a>
+                        </li>
+                        <li>
+                            <a href="repository-index.html">
+                                知识百科
+                            </a>
+                        </li>
+                        <li>
+                            <a href="quiz-index.html">
+                                在线问答
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html" target="_blank">
+                                关于我们
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                张三
+                                <span class="caret">
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-header">
+                                    未读消息
+                                    <span class="badge">
+                                        61
+                                    </span>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        未读消息1
+                                        <span class="badge">
+                                            2
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        未读消息2
+                                        <span class="badge">
+                                            42
+                                        </span>
+                                    </a>
+                                </li>
+                                <li role="separator" class="divider">
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        注销
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.nav-collapse -->
+            </div>
+        </nav>
+        <div class="cover" data-stellar-background-ratio="0.5">
+            <div class="avatar">
+                <img src="http://oqlse9rck.bkt.clouddn.com/avatar.jpg"/>
+            </div>
+            <div class="btn-group account-fab">
+                <button type="button" class="fab dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="glyphicon glyphicon-option-vertical">
+                    </span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li>
+                        <a href="#">
+                            资料
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            设置
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            编辑
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#uploading">
+                            资源上传
+                        </a>
+                    </li>
+                    <li class="divider">
+                    </li>
+                    <li>
+                        <a href="#">
+                            关注
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            粉丝
+                        </a>
+                    </li>
+                    <li class="divider">
+                    </li>
+                    <li>
+                        <a href="#">
+                            主题
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            帖子
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            收藏的帖子
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ol class="breadcrumb">
+            <li>
+                <a href="#">
+                    主页
+                </a>
+            </li>
+            <li class="active">
+                个人中心
+            </li>
+        </ol>
+        <div class="personal-data container">
+            <h1>
+                王炜
+            </h1>
+            <div class="account-stats">
+                <div class="stat">
+                    <div class="stat-number">
+                        14
+                    </div>
+                    <span class="stat-label">
+                        发布资源
+                    </span>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">
+                        1
+                    </div>
+                    <span class="stat-label">
+                        发布主题
+                    </span>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">
+                        5
+                    </div>
+                    <span class="stat-label">
+                        发布问题
+                    </span>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">
+                        4
+                    </div>
+                    <span class="stat-label">
+                        粉丝
+                    </span>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">
+                        5
+                    </div>
+                    <span class="stat-label">
+                        关注
+                    </span>
+                </div>
+            </div>
+            <div class="meta">
+                <span>
+                    注册时间
+                </span>
+                <strong>
+                    1月前
+                </strong>
+                <span>
+                    最后登录
+                </span>
+                <strong>
+                    4分钟前
+                </strong>
+            </div>
+            <hr/>
+        </div>
+        <div class="container center-content">
+            <h1>
+                王炜 发布的资源
+            </h1>
+            <div class="col-xs-12">
+                <ul class="posts-list">
+                    <li class="posts-list-item row">
+                        <div class="col-lg-11 col-sm-10 col-xs-9 post-body">
+                            <a href="#" class="topic-title">
+                                javascript从入门到精通
+                            </a>
+                            <div class="content">
+                                《JavaScript从入门到精通》分为三篇：第一篇为JavaScript语法基础，主要包括JavaScript简介、如何实现JavaScript、数据类型、变量和常量、运算符、语句和函数等内容；第二篇为JavaScript对象，主要包括对象、核心对象、数组、正则表达式、对象模型和事件驱动、窗口与框架、文档对象、表单对象等内容；第三篇为高级技术，主要包括BOM中的其他对象、文档对象模型以及Ajax技术等内容。
+                            </div>
+                            <small class="topic-category">
+                                资源类型:
+                                <a href="#">
+                                    学习资料
+                                </a>
+                            </small>
+                            <div class="post-info">
+                                <a href="#">
+                                    <img src="http://oqlse9rck.bkt.clouddn.com/avatar.jpg" data-toggle="tooltip" title="王炜" class="img-responsive"/>
+                                </a>
+                                <div class="post-author">
+                                    <a href="#">
+                                        王炜
+                                    </a>
+                                    <br/>
+                                    <span class="timeago">
+                                        10天前
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="posts-list-item row">
+                        <div class="col-lg-11 col-sm-10 col-xs-9 post-body">
+                            <a href="#" class="topic-title">
+                                javascript从入门到精通
+                            </a>
+                            <div class="content">
+                                《JavaScript从入门到精通》分为三篇：第一篇为JavaScript语法基础，主要包括JavaScript简介、如何实现JavaScript、数据类型、变量和常量、运算符、语句和函数等内容；第二篇为JavaScript对象，主要包括对象、核心对象、数组、正则表达式、对象模型和事件驱动、窗口与框架、文档对象、表单对象等内容；第三篇为高级技术，主要包括BOM中的其他对象、文档对象模型以及Ajax技术等内容。
+                            </div>
+                            <small class="topic-category">
+                                资源类型:
+                                <a href="#">
+                                    学习资料
+                                </a>
+                            </small>
+                            <div class="post-info">
+                                <a href="#">
+                                    <img src="http://oqlse9rck.bkt.clouddn.com/avatar.jpg" data-toggle="tooltip" title="王炜" class="img-responsive"/>
+                                </a>
+                                <div class="post-author">
+                                    <a href="#">
+                                        王炜
+                                    </a>
+                                    <br/>
+                                    <span class="timeago">
+                                        10天前
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="posts-list-item row">
+                        <div class="col-lg-11 col-sm-10 col-xs-9 post-body">
+                            <a href="#" class="topic-title">
+                                javascript从入门到精通
+                            </a>
+                            <div class="content">
+                                《JavaScript从入门到精通》分为三篇：第一篇为JavaScript语法基础
+                            </div>
+                            <small class="topic-category">
+                                资源类型:
+                                <a href="#">
+                                    学习资料
+                                </a>
+                            </small>
+                            <div class="post-info">
+                                <a href="#">
+                                    <img src="http://oqlse9rck.bkt.clouddn.com/avatar.jpg" data-toggle="tooltip" title="王炜" class="img-responsive"/>
+                                </a>
+                                <div class="post-author">
+                                    <a href="#">
+                                        王炜
+                                    </a>
+                                    <br/>
+                                    <span class="timeago">
+                                        10天前
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="posts-list-item row">
+                        <div class="col-lg-11 col-sm-10 col-xs-9 post-body">
+                            <a href="#" class="topic-title">
+                                javascript从入门到精通
+                            </a>
+                            <div class="content">
+                                《JavaScript从入门到精通》分为三篇：第一篇为JavaScript语法基础
+                            </div>
+                            <small class="topic-category">
+                                资源类型:
+                                <a href="#">
+                                    学习资料
+                                </a>
+                            </small>
+                            <div class="post-info">
+                                <a href="#">
+                                    <img src="http://oqlse9rck.bkt.clouddn.com/avatar.jpg" data-toggle="tooltip" title="王炜" class="img-responsive"/>
+                                </a>
+                                <div class="post-author">
+                                    <a href="#">
+                                        王炜
+                                    </a>
+                                    <br/>
+                                    <span class="timeago">
+                                        10天前
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="posts-list-item row">
+                        <div class="col-lg-11 col-sm-10 col-xs-9 post-body">
+                            <a href="#" class="topic-title">
+                                javascript从入门到精通
+                            </a>
+                            <div class="content">
+                                《JavaScript从入门到精通》分为三篇：第一篇为JavaScript语法基础
+                            </div>
+                            <small class="topic-category">
+                                资源类型:
+                                <a href="#">
+                                    学习资料
+                                </a>
+                            </small>
+                            <div class="post-info">
+                                <a href="#">
+                                    <img src="http://oqlse9rck.bkt.clouddn.com/avatar.jpg" data-toggle="tooltip" title="王炜" class="img-responsive"/>
+                                </a>
+                                <div class="post-author">
+                                    <a href="#">
+                                        王炜
+                                    </a>
+                                    <br/>
+                                    <span class="timeago">
+                                        10天前
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="posts-list-item row">
+                        <div class="col-lg-11 col-sm-10 col-xs-9 post-body">
+                            <a href="#" class="topic-title">
+                                javascript从入门到精通
+                            </a>
+                            <div class="content">
+                                《JavaScript从入门到精通》分为三篇：第一篇为JavaScript语法基础
+                            </div>
+                            <small class="topic-category">
+                                资源类型:
+                                <a href="#">
+                                    学习资料
+                                </a>
+                            </small>
+                            <div class="post-info">
+                                <a href="#">
+                                    <img src="http://oqlse9rck.bkt.clouddn.com/avatar.jpg" data-toggle="tooltip" title="王炜" class="img-responsive"/>
+                                </a>
+                                <div class="post-author">
+                                    <a href="#">
+                                        王炜
+                                    </a>
+                                    <br/>
+                                    <span class="timeago">
+                                        10天前
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="posts-list-item row">
+                        <div class="col-lg-11 col-sm-10 col-xs-9 post-body">
+                            <a href="#" class="topic-title">
+                                javascript从入门到精通
+                            </a>
+                            <div class="content">
+                                《JavaScript从入门到精通》分为三篇：第一篇为JavaScript语法基础
+                            </div>
+                            <small class="topic-category">
+                                资源类型:
+                                <a href="#">
+                                    学习资料
+                                </a>
+                            </small>
+                            <div class="post-info">
+                                <a href="#">
+                                    <img src="http://oqlse9rck.bkt.clouddn.com/avatar.jpg" data-toggle="tooltip" title="王炜" class="img-responsive"/>
+                                </a>
+                                <div class="post-author">
+                                    <a href="#">
+                                        王炜
+                                    </a>
+                                    <br/>
+                                    <span class="timeago">
+                                        10天前
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="posts-list-item row">
+                        <div class="col-lg-11 col-sm-10 col-xs-9 post-body">
+                            <a href="#" class="topic-title">
+                                javascript从入门到精通
+                            </a>
+                            <div class="content">
+                                《JavaScript从入门到精通》分为三篇：第一篇为JavaScript语法基础
+                            </div>
+                            <small class="topic-category">
+                                资源类型:
+                                <a href="#">
+                                    学习资料
+                                </a>
+                            </small>
+                            <div class="post-info">
+                                <a href="#">
+                                    <img src="http://oqlse9rck.bkt.clouddn.com/avatar.jpg" data-toggle="tooltip" title="王炜" class="img-responsive"/>
+                                </a>
+                                <div class="post-author">
+                                    <a href="#">
+                                        王炜
+                                    </a>
+                                    <br/>
+                                    <span class="timeago">
+                                        10天前
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            Copyright © 2015.东旭工作室 Dxstudio All rights reserved.
+        </div>
+        <div class="modal fade" id="uploading" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">
+                                &times;
+                            </span>
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">
+                            资源上传
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="btn-group btn-group-justified" role="group">
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    资源分类
+                                    <span class="caret">
+                                    </span>
+                                </button>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a class="firstpart-for-resources" tabindex="-1" href="javascript:;">
+                                            开发技术
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-position">
+                                            <li>
+                                                <a class="secondpart-for-resources" tabindex="-1" href="javascript:;">
+                                                    C语言
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    C#
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    C++
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    Java
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    Python
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    VB
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    Delphi
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    Perl
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    其他
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="firstpart-for-resources" tabindex="-1" href="javascript:;">
+                                            移动开发
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-position">
+                                            <li>
+                                                <a class="secondpart-for-resources" tabindex="-1" href="javascript:;">
+                                                    Android
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    IOS
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    JavaMe
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    WinPhone
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    Node.js
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    其他
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="firstpart-for-resources" tabindex="-1" href="javascript:;">
+                                            网站建设
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-position">
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    HTML+CSS
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    JavaScript
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    jQuery
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    PHP
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    .Net
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    J2EE
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    JSP
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    AJAX
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    其他
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="firstpart-for-resources" tabindex="-1" href="javascript:;">
+                                            操作系统
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-position">
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    Windows
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    Linux
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    OS
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    Unix
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    桌面系统
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    其他
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="firstpart-for-resources" tabindex="-1" href="javascript:;">
+                                            数据库
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-position">
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    Mysql
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    MongoDB
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    Oracle
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    Access
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    SQLServer
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    SQLite
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    其他
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="firstpart-for-resources" tabindex="-1" href="javascript:;">
+                                            考试认证
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-position">
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    微软认证
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    思科认证
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    Oracle认证
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    华为认证
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    软考认证
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="secondpart-for-resources" href="javascript:;">
+                                                    其他
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    资源类型
+                                    <span class="caret">
+                                    </span>
+                                </button>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li>
+                                        <a class="type-elem-for-resources" tabindex="-1" href="javascript:;">
+                                            工具类
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="type-elem-for-resources" tabindex="-1" href="javascript:;">
+                                            代码类
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="type-elem-for-resources" tabindex="-1" href="javascript:;">
+                                            文档类
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="type-elem-for-resources" tabindex="-1" href="javascript:;">
+                                            电子书
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="type-elem-for-resources" tabindex="-1" href="javascript:;">
+                                            音频类
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    所需积分
+                                    <span class="caret">
+                                    </span>
+                                </button>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li>
+                                        <a class="type-elem-for-resources" tabindex="-1" href="javascript:;">
+                                            1
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="type-elem-for-resources" tabindex="-1" href="javascript:;">
+                                            2
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="type-elem-for-resources" tabindex="-1" href="javascript:;">
+                                            3
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="type-elem-for-resources" tabindex="-1" href="javascript:;">
+                                            4
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="type-elem-for-resources" tabindex="-1" href="javascript:;">
+                                            5
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <input type="text" class="form-control resource-name" placeholder="资源名称"/>
+                        <textarea class="form-control introduction" rows="3" placeholder="资源简介">
+                        </textarea>
+                        <p class="error-red">
+                            &nbsp;
+                            <span>
+                                这里是报错信息
+                            </span>
+                        </p>
+                        <a class="btn btn-info btn-block file-admin" href="#" role="button">
+                            选择文件
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/TothingWay.js">
+        </script>
+        <script src="js/function.js">
+        </script>
+    </body>
+</html>

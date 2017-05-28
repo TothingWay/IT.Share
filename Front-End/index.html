@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>
+            资源共享平台
+        </title>
+        <link rel="shortcut icon" href="http://oqlse9rck.bkt.clouddn.com/favicon.ico">
+        <link href="css/TothingWay.css" rel="stylesheet"/>
+        <link href="css/index.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top animated">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">
+                            IT.Share
+                        </span>
+                        <span class="icon-bar">
+                        </span>
+                        <span class="icon-bar">
+                        </span>
+                        <span class="icon-bar">
+                        </span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                    </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active">
+                            <a href="index.html">
+                                首页
+                            </a>
+                        </li>
+                        <li>
+                            <a href="resource-index.html">
+                                资料中心
+                            </a>
+                        </li>
+                        <li>
+                            <a href="forum-index.html">
+                                交流分享
+                            </a>
+                        </li>
+                        <li>
+                            <a href="repository-index.html">
+                                知识百科
+                            </a>
+                        </li>
+                        <li>
+                            <a href="quiz-index.html">
+                                在线问答
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html" target="_blank">
+                                关于我们
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                name
+                                <span class="caret">
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-header">
+                                    未读消息
+                                    <span class="badge">
+                                        61
+                                    </span>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        未读消息1
+                                        <span class="badge">
+                                            2
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        未读消息2
+                                        <span class="badge">
+                                            42
+                                        </span>
+                                    </a>
+                                </li>
+                                <li role="separator" class="divider">
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        个人中心
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        注销
+                                    </a>
+                                </li>
+                            </ul> -->
+                            <a href="#" data-toggle="modal" data-target="#login">
+                                登录
+                            </a>
+                        </li>
+                        <li class="register">
+                            <a href="#" data-toggle="modal" data-target="#register">
+                                注册
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.nav-collapse -->
+            </div>
+        </nav>
+        <div class="dark" id="hero">
+            <ul class="scene" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15" id="scene">
+                <li class="layer" data-depth="1.00">
+                    <div class="depth-5 faded">
+                        <p>
+                            IOS
+                        </p>
+                    </div>
+                </li>
+                <li class="layer" data-depth="0.80">
+                    <div class="depth-4 faded">
+                        <p>
+                            Javascript
+                        </p>
+                    </div>
+                </li>
+                <li class="layer" data-depth="0.60">
+                    <div class="depth-3 flake1 faded">
+                        <p>
+                            精品课程
+                        </p>
+                    </div>
+                    <div class="depth-3 flake2 faded">
+                        <p>
+                            热点技术
+                        </p>
+                    </div>
+                    <div class="depth-3 flake3 faded">
+                        <p>
+                            PDF
+                        </p>
+                    </div>
+                    <div class="depth-3 flake4 faded">
+                        <p>
+                            教学视屏
+                        </p>
+                    </div>
+                </li>
+                <li class="layer" data-depth="0.50">
+                    <div class="depth-2 flake1 faded">
+                        <p>
+                            在线交流
+                        </p>
+                    </div>
+                    <div class="depth-2 flake2 fade">
+                        <p>
+                            安装包
+                        </p>
+                    </div>
+                </li>
+                <li class="layer" data-depth="0.40">
+                    <div class="depth-1 flake1 faded">
+                        <p>
+                            在线问答
+                        </p>
+                    </div>
+                    <div class="depth-1 flake3 faded">
+                        <p>
+                            热门知识库
+                        </p>
+                    </div>
+                    <div class="depth-1 flake4 faded">
+                        <p>
+                            热点技术分享
+                        </p>
+                    </div>
+                </li>
+                <li class="layer skrollable skrollable-between" data-0="opacity: 1;" data-depth="0" data-top-bottom="opacity: 0;">
+                    <div class="hero-content ani">
+                        <h1>
+                            IT.share
+                        </h1>
+                        <p>
+                            The more we share, the more we have.
+                        </p>
+                        <p class="sub-title">
+                            IT share just share it!
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <div class="btn-learn">
+            	<a href="resource-index.html" class="btn btn-lg btn-default" role="button">
+                    Learn more
+                </a>
+            </div>
+            <div class="btn-action ani">
+                <a data-depth="0.30" href="#" id="action">
+                    <i class="icon-angle-down">
+                    </i>
+                </a>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-3 icon">
+                        <img src="http://oqlse9rck.bkt.clouddn.com/icon1.png" class="center-block" width="40px" height="40px"/>
+                        <p>
+                            完善的IT知识资源库
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 icon">
+                        <img src="http://oqlse9rck.bkt.clouddn.com/icon2.png" class="center-block" width="40px" height="40px"/>
+                        <p>
+                            形象生动的视屏教程
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 icon">
+                        <img src="http://oqlse9rck.bkt.clouddn.com/icon3.png" class="center-block" width="40px" height="40px"/>
+                        <p>
+                            无可挑剔的用户体验
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 icon">
+                        <img src="http://oqlse9rck.bkt.clouddn.com/icon4.png" class="center-block" width="35px" height="40px"/>
+                        <p>
+                            高效的资源分享机制
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="nav-tab">
+            <li class="active">
+                <a href="#data" data-toggle="tab" class="data">
+                    精品课程
+                </a>
+            </li>
+            <li>
+                <a href="#technology" data-toggle="tab" class="technology">
+                    热点技术
+                </a>
+            </li>
+            <li>
+                <a href="#download" data-toggle="tab" class="download">
+                    下载热门
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="data">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4">
+                            <figure class="effect-chico">
+                                <img src="http://oqlse9rck.bkt.clouddn.com/video.jpg"/>
+                                <figcaption>
+                                    <h3>
+                                        Node.js
+                                    </h3>
+                                    <p>
+                                        <i class="icon-play">
+                                        </i>
+                                    </p>
+                                    <a href="resource-detal.html" target="_blank">
+                                        View more
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <figure class="effect-chico">
+                                <img src="http://oqlse9rck.bkt.clouddn.com/video.jpg"/>
+                                <figcaption>
+                                    <h3>
+                                        IOS
+                                    </h3>
+                                    <p>
+                                        <i class="icon-play">
+                                        </i>
+                                    </p>
+                                    <a href="resource-detal.html" target="_blank">
+                                        View more
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <figure class="effect-chico">
+                                <img src="http://oqlse9rck.bkt.clouddn.com/video.jpg"/>
+                                <figcaption>
+                                    <h3>
+                                        Android
+                                    </h3>
+                                    <p>
+                                        <i class="icon-play">
+                                        </i>
+                                    </p>
+                                    <a href="resource-detal.html" target="_blank">
+                                        View more
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <figure class="effect-chico">
+                                <img src="http://oqlse9rck.bkt.clouddn.com/video.jpg"/>
+                                <figcaption>
+                                    <h3>
+                                        VB
+                                    </h3>
+                                    <p>
+                                        <i class="icon-play">
+                                        </i>
+                                    </p>
+                                    <a href="resource-detal.html" target="_blank">
+                                        View more
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <figure class="effect-chico">
+                                <img src="http://oqlse9rck.bkt.clouddn.com/video.jpg"/>
+                                <figcaption>
+                                    <h3>
+                                        .NET
+                                    </h3>
+                                    <p>
+                                        <i class="icon-play">
+                                        </i>
+                                    </p>
+                                    <a href="resource-detal.html" target="_blank">
+                                        View more
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <figure class="effect-chico">
+                                <img src="http://oqlse9rck.bkt.clouddn.com/video.jpg"/>
+                                <figcaption>
+                                    <h3>
+                                        python
+                                    </h3>
+                                    <p>
+                                        <i class="icon-play">
+                                        </i>
+                                    </p>
+                                    <a href="resource-detal.html" target="_blank">
+                                        View more
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <figure class="effect-chico">
+                                <img src="http://oqlse9rck.bkt.clouddn.com/video.jpg"/>
+                                <figcaption>
+                                    <h3>
+                                        Javascript
+                                    </h3>
+                                    <p>
+                                        <i class="icon-play">
+                                        </i>
+                                    </p>
+                                    <a href="resource-detal.html" target="_blank">
+                                        View more
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <figure class="effect-chico">
+                                <img src="http://oqlse9rck.bkt.clouddn.com/video.jpg"/>
+                                <figcaption>
+                                    <h3>
+                                        Java
+                                    </h3>
+                                    <p>
+                                        <i class="icon-play">
+                                        </i>
+                                    </p>
+                                    <a href="resource-detal.html" target="_blank">
+                                        View more
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <figure class="effect-chico">
+                                <img src="http://oqlse9rck.bkt.clouddn.com/video.jpg"/>
+                                <figcaption>
+                                    <h3>
+                                        C++
+                                    </h3>
+                                    <p>
+                                        <i class="icon-play">
+                                        </i>
+                                    </p>
+                                    <a href="resource-detal.html" target="_blank">
+                                        View more
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-block btn-load-more">
+                        加载更多
+                    </a>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="technology">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4">
+                            <figure class="effect-oscar">
+                                <img src="http://oqlse9rck.bkt.clouddn.com/technology.jpg"/>
+                                <figcaption>
+                                    <h3>
+                                        Android
+                                    </h3>
+                                    <p>
+                                        <i class="icon-fire">
+                                        </i>
+                                    </p>
+                                    <a href="resource-detal.html" target="_blank">
+                                        View more
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <figure class="effect-oscar">
+                                <img src="http://oqlse9rck.bkt.clouddn.com/technology.jpg"/>
+                                <figcaption>
+                                    <h3>
+                                        VB
+                                    </h3>
+                                    <p>
+                                        <i class="icon-fire">
+                                        </i>
+                                    </p>
+                                    <a href="resource-detal.html" target="_blank">
+                                        View more
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <figure class="effect-oscar">
+                                <img src="http://oqlse9rck.bkt.clouddn.com/technology.jpg"/>
+                                <figcaption>
+                                    <h3>
+                                        .NET
+                                    </h3>
+                                    <p>
+                                        <i class="icon-fire">
+                                        </i>
+                                    </p>
+                                    <a href="resource-detal.html" target="_blank">
+                                        View more
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <figure class="effect-oscar">
+                                <img src="http://oqlse9rck.bkt.clouddn.com/technology.jpg"/>
+                                <figcaption>
+                                    <h3>
+                                        python
+                                    </h3>
+                                    <p>
+                                        <i class="icon-fire">
+                                        </i>
+                                    </p>
+                                    <a href="resource-detal.html" target="_blank">
+                                        View more
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <figure class="effect-oscar">
+                                <img src="http://oqlse9rck.bkt.clouddn.com/technology.jpg"/>
+                                <figcaption>
+                                    <h3>
+                                        Javascript
+                                    </h3>
+                                    <p>
+                                        <i class="icon-fire">
+                                        </i>
+                                    </p>
+                                    <a href="resource-detal.html" target="_blank">
+                                        View more
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <figure class="effect-oscar">
+                                <img src="http://oqlse9rck.bkt.clouddn.com/technology.jpg"/>
+                                <figcaption>
+                                    <h3>
+                                        Java
+                                    </h3>
+                                    <p>
+                                        <i class="icon-fire">
+                                        </i>
+                                    </p>
+                                    <a href="resource-detal.html" target="_blank">
+                                        View more
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <figure class="effect-oscar">
+                                <img src="http://oqlse9rck.bkt.clouddn.com/technology.jpg"/>
+                                <figcaption>
+                                    <h3>
+                                        C++
+                                    </h3>
+                                    <p>
+                                        <i class="icon-fire">
+                                        </i>
+                                    </p>
+                                    <a href="resource-detal.html" target="_blank">
+                                        View more
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="download">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4">
+                            <figure class="effect-sarah">
+                                <img src="http://oqlse9rck.bkt.clouddn.com/download.jpg"/>
+                                <figcaption>
+                                    <h3>
+                                        PHP
+                                    </h3>
+                                    <p>
+                                        从入门到精通
+                                    </p>
+                                    <a href="resource-detal.html" target="_blank">
+                                        View more
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <figure class="effect-sarah">
+                                <img src="http://oqlse9rck.bkt.clouddn.com/download.jpg"/>
+                                <figcaption>
+                                    <h3>
+                                        IOS
+                                    </h3>
+                                    <p>
+                                        从入门到精通
+                                    </p>
+                                    <a href="resource-detal.html" target="_blank">
+                                        View more
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <figure class="effect-sarah">
+                                <img src="http://oqlse9rck.bkt.clouddn.com/download.jpg"/>
+                                <figcaption>
+                                    <h3>
+                                        Android
+                                    </h3>
+                                    <p>
+                                        从入门到精通
+                                    </p>
+                                    <a href="resource-detal.html" target="_blank">
+                                        View more
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <figure class="effect-sarah">
+                                <img src="http://oqlse9rck.bkt.clouddn.com/download.jpg"/>
+                                <figcaption>
+                                    <h3>
+                                        VB
+                                    </h3>
+                                    <p>
+                                        从入门到精通
+                                    </p>
+                                    <a href="resource-detal.html" target="_blank">
+                                        View more
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <figure class="effect-sarah">
+                                <img src="http://oqlse9rck.bkt.clouddn.com/download.jpg"/>
+                                <figcaption>
+                                    <h3>
+                                        .NET
+                                    </h3>
+                                    <p>
+                                        从入门到精通
+                                    </p>
+                                    <a href="resource-detal.html" target="_blank">
+                                        View more
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <figure class="effect-sarah">
+                                <img src="http://oqlse9rck.bkt.clouddn.com/download.jpg"/>
+                                <figcaption>
+                                    <h3>
+                                        python
+                                    </h3>
+                                    <p>
+                                        从入门到精通
+                                    </p>
+                                    <a href="resource-detal.html" target="_blank">
+                                        View more
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <figure class="effect-sarah">
+                                <img src="http://oqlse9rck.bkt.clouddn.com/download.jpg"/>
+                                <figcaption>
+                                    <h3>
+                                        Javascript
+                                    </h3>
+                                    <p>
+                                        从入门到精通
+                                    </p>
+                                    <a href="resource-detal.html" target="_blank">
+                                        View more
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <figure class="effect-sarah">
+                                <img src="http://oqlse9rck.bkt.clouddn.com/download.jpg"/>
+                                <figcaption>
+                                    <h3>
+                                        Java
+                                    </h3>
+                                    <p>
+                                        从入门到精通
+                                    </p>
+                                    <a href="resource-detal.html" target="_blank">
+                                        View more
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <figure class="effect-sarah">
+                                <img src="http://oqlse9rck.bkt.clouddn.com/download.jpg"/>
+                                <figcaption>
+                                    <h3>
+                                        C++
+                                    </h3>
+                                    <p>
+                                        从入门到精通
+                                    </p>
+                                    <a href="resource-detal.html" target="_blank">
+                                        View more
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-block btn-load-more">
+                        加载更多
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="guess-you-like" data-stellar-background-ratio="0.5">
+            <h1>
+                猜你喜欢
+            </h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="col-xs-2 like-icon">
+                            <i class="icon-heart-empty">
+                            </i>
+                        </div>
+                        <div class="col-xs-10">
+                            <h3>
+                                Javascript
+                            </h3>
+                            <div class="separator-line">
+                            </div>
+                            <p>
+                                JavaScript是一种网络的脚本语言,已经被广泛用于Web应用开发,常用来为网页添加各式各样的动态功能,为用户提供更流畅美观的浏览效果。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="col-xs-2 like-icon">
+                            <i class="icon-heart-empty">
+                            </i>
+                        </div>
+                        <div class="col-xs-10">
+                            <h3>
+                                IOS
+                            </h3>
+                            <div class="separator-line">
+                            </div>
+                            <p>
+                                iOS是由苹果公司开发的移动操作系统，苹果公司最早于2007年1月9日的Macworld大会上公布这个系统，最初是设计给iPhone使用的，后来陆续套用到iPod touch、iPad以及Apple TV等产品上
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="col-xs-2 like-icon">
+                            <i class="icon-heart-empty">
+                            </i>
+                        </div>
+                        <div class="col-xs-10">
+                            <h3>
+                                Android
+                            </h3>
+                            <div class="separator-line">
+                            </div>
+                            <p>
+                                Android是一种基于Linux的自由及开放源代码的操作系统，主要使用于移动设备，如智能手机和平板电脑，由Google公司和开放手机联盟领导及开发。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide clearfix">
+                    <div class="col-xs-12 col-sm-6 slide-content img1">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 slide-content-r">
+                        <div class="col-sm-3 col-xs-12">
+                            <span class="about">
+                                Ps
+                            </span>
+                        </div>
+                        <div class="col-sm-9 col-xs-12">
+                            <h3>
+                                有未能解决的问题？
+                            </h3>
+                            <p>
+                                在线问答板块可以帮助你解决你的疑问，你可以向他人提出一些你未能解决的问题，如过没人回答，可以通过悬赏的方式。你也可以回答一些他人的问题，如果答案被采纳，则会获得响应积分。积分可用于资源的下载。在线问答板块可以帮助你解决你的疑问，你可以向他人提出一些你未能解决的问题
+                            </p>
+                            <a href="quiz-index.html" class="btn btn-enter">
+                                Go
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="col-xs-12 col-sm-6 slide-content img2">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 slide-content-r">
+                        <div class="col-sm-3 col-xs-12">
+                            <span class="about about-quote">
+                                <i class="icon-quote-left">
+                                </i>
+                            </span>
+                        </div>
+                        <div class="col-sm-9 col-xs-12">
+                            <h3>
+                                逛逛论坛？
+                            </h3>
+                            <p>
+                                在线问答板块可以帮助你解决你的疑问，你可以向他人提出一些你未能解决的问题，如过没人回答，可以通过悬赏的方式。你也可以回答一些他人的问题，如果答案被采纳，则会获得响应积分。积分可用于资源的下载。在线问答板块可以帮助你解决你的疑问，你可以向他人提出一些你未能解决的问题
+                            </p>
+                            <a href="forum-index.html" class="btn btn-enter">
+                                Go
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination">
+            </div>
+        </div>
+        <div class="statistics" id="statistics" data-stellar-background-ratio="0.5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-3">
+                        <h1>
+                            <i class="icon-tasks">
+                            </i>
+                        </h1>
+                        <p id="resource-number">
+                            0
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-3">
+                        <h1>
+                            <i class="icon-download-alt">
+                            </i>
+                        </h1>
+                        <p id="download-number">
+                            0
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-3">
+                        <h1>
+                            <i class="icon-user">
+                            </i>
+                        </h1>
+                        <p id="user-number">
+                            0
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-3">
+                        <h1>
+                            <i class="icon-thumbs-up">
+                            </i>
+                        </h1>
+                        <p id="praise-number">
+                            0
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 foot-l">
+                        Copyright © 2015.东旭工作室 Dxstudio All rights reserved.
+                    </div>
+                    <div class="col-xs-12 col-sm-6 foot-r">
+                        <i class="icon-tasks">
+                        </i>
+                        IT.Share
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="scrollToTop" id="scrollToTop">
+            <i class="icon-angle-up">
+            </i>
+        </a>
+        <!-- register -->
+        <div class="modal fade" id="register" role="dialog">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content" id="register-main" style="display:block; ">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">
+                                &times;
+                            </span>
+                        </button>
+                        <h5 class="modal-title">
+                            IT.SHARE
+                        </h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="邮箱" />
+                            <span class="animated fadeInRight register-email-wrong">
+                                邮箱格式错误
+                            </span>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="用户名" />
+                            <span class="animated fadeInRight register-username-wrong">
+                                用户名或密码错误
+                            </span>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="password" class="register-password" id="set-type-register" placeholder="密码" />
+                            <a href="javascript:;" class="btn-eye-register">
+                                <i class="icon-eye-open" id="icon-eye-register">
+                                </i>
+                            </a>
+                            <span class="animated fadeInRight pw-error register-password-wrong">
+                                用户名或密码错误
+                            </span>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="验证码" />
+                            <a href="#" data-toggle="tooltip" title="看不清楚？换一张">
+                                <img src="images/code.png" width="65px" height="23px"/>
+                            </a>
+                            <span class="animated fadeInRight code-error register-code-wrong">
+                                请输入正确验证码
+                            </span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary btn-block " id="btn-register">
+                            注册
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-content" id="register-success" style="display: none;">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">
+                                &times;
+                            </span>
+                        </button>
+                        <button type="button" class="close back">
+                            <span aria-hidden="true">
+                                <i class="icon-angle-left">
+                                </i>
+                            </span>
+                        </button>
+                        <h5 class="modal-title">
+                            邮箱验证
+                        </h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="请输入6位验证码" />
+                            <button class="btn" id="code-btn2" type="button">
+                                重发验证码
+                            </button>
+                            <span class="animated fadeInRight email-code-error">
+                                验证码错误
+                            </span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary btn-block">
+                            进入平台
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- login -->
+        <div class="modal fade" id="login" role="dialog">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content" id="first">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">
+                                &times;
+                            </span>
+                        </button>
+                        <h5 class="modal-title">
+                            IT.SHARE
+                        </h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="用户名" />
+                            <span class="animated fadeInRight login-username-wrong">
+                                用户名或密码错误
+                            </span>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="password" placeholder="密码" />
+                            <span class="animated fadeInRight login-password-wrong">
+                                用户名或密码错误
+                            </span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="clearfix login-help">
+                            <div class="col-xs-6 remember-pw">
+                                <input type="checkbox" id="remember"/>
+                                <label for="remember">
+                                    记住密码
+                                </label>
+                            </div>
+                            <div class="col-xs-6">
+                                <a href="#" class="unable-login">
+                                    无法登录？
+                                </a>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-block" id="login-btn">
+                            登录
+                        </button>
+                    </div>
+                </div>
+                <!-- first -->
+                <div class="modal-content" id="second" style="display: none;">
+                    <div class="modal-header unable-login-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">
+                                &times;
+                            </span>
+                        </button>
+                        <h5 class="modal-title">
+                            找回密码
+                        </h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="邮箱" />
+                            <span class="animated fadeInRight find-password-email-wrong">
+                                邮箱不存在
+                            </span>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="验证码" />
+                            <a href="#" data-toggle="tooltip" title="看不清楚？换一张">
+                                <img src="images/code.png" width="65px" height="23px"/>
+                            </a>
+                            <span class="animated fadeInRight code-error find-password-code-wrong">
+                                验证码错误
+                            </span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary btn-block get-code">
+                            获取验证码
+                        </button>
+                    </div>
+                </div>
+                <!-- second -->
+                <div class="modal-content" id="last" style="display: none;">
+                    <div class="modal-header unable-login-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">
+                                &times;
+                            </span>
+                        </button>
+                        <h5 class="modal-title">
+                            重置密码
+                        </h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="邮箱" />
+                            <span class="animated fadeInRight">
+                                请输入正确验证码
+                            </span>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="password" id="set-type-login" placeholder="密码" />
+                            <a href="javascript:;" class="btn-eye-login">
+                                <i class="icon-eye-open" id="icon-eye-login">
+                                </i>
+                            </a>
+                            <span class="animated fadeInRight pw-error">
+                                用户名或密码错误
+                            </span>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="请输入6位验证码" />
+                            <button class="btn" id="code-btn" type="button">
+                                重发验证码
+                            </button>
+                            <span class="animated fadeInRight email-code-error">
+                                验证码错误
+                            </span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary btn-block get-code">
+                            重置密码
+                        </button>
+                    </div>
+                </div>
+                <!-- last -->
+            </div>
+        </div>
+        <script src="js/TothingWay.js">
+        </script>
+        <script src="js/index.js">
+        </script>
+    </body>
+</html>

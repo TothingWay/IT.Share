@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+            资源共享平台
+        </title>
+        <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport"/>
+        <link href="css/TothingWay.css" rel="stylesheet"/>
+        <link href="css/admin.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">
+                                IT.SHARE后台管理系统
+                            </span>
+                            <span class="icon-bar">
+                            </span>
+                            <span class="icon-bar">
+                            </span>
+                            <span class="icon-bar">
+                            </span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            IT.SHARE后台管理系统
+                        </a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav side-nav">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a role="button" class="active" href="index.html">
+                                        <i class="icon-dashboard">
+                                        </i>
+                                        本站概况
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a role="button" href="admin-set.html">
+                                        <i class="icon-cogs">
+                                        </i>
+                                        管理员设置
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <a role="button" data-toggle="collapse" data-parent=".side-nav" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                                        <i class="icon-user">
+                                        </i>
+                                        用户管理
+                                        <i class="icon icon-angle-left">
+                                        </i>
+                                    </a>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false">
+                                    <div class="panel-body">
+                                        <ul>
+                                           <li>
+                                                <a href="user-batch-management.html">
+                                                    用户批量管理
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="report-management.html"> 
+                                                    用户举报管理
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent=".side-nav" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <i class="icon-tasks">
+                                        </i>
+                                        资源管理
+                                        <i class="icon icon-angle-left">
+                                        </i>
+                                    </a>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li>
+                                                <a href="resource-batch-management.html">
+                                                    资源批量管理
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="resource-audit.html">
+                                                    资源审核
+                                                </a>
+                                            </li>
+                                             <li>
+                                                <a href="uploading.html">
+                                                    资源上传
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent=".side-nav" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <i class="icon-group">
+                                        </i>
+                                        用户论坛管理
+                                        <i class="icon icon-angle-left">
+                                        </i>
+                                    </a>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li>
+                                                <a href="topic-management.html">
+                                                    主题管理
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="post-management.html">
+                                                    帖子管理
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="message-management.html">
+                                                    消息管理
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="statistics-recommend.html">
+                                                    统计与推荐
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFour">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent=".side-nav" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        <i class="icon-comments-alt">
+                                        </i>
+                                        在线问答管理
+                                        <i class="icon icon-angle-left">
+                                        </i>
+                                    </a>
+                                </div>
+                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                    <div class="panel-body">
+                                        <ul>
+                                             <li>
+                                                <a href="issues-management.html">
+                                                    问题管理
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="answer-management.html">
+                                                    回答管理
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="additional-content-management.html">
+                                                    追加管理
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="question-recommend.html">
+                                                    问答统计与推荐
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFour">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent=".side-nav" href="#collapseFive" aria-expanded="false" aria-controls="collapseFour">
+                                        <i class="icon-comments-alt">
+                                        </i>
+                                        知识库管理
+                                        <i class="icon icon-angle-left">
+                                        </i>
+                                    </a>
+                                </div>
+                                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li>
+                                                <a href="new-library.html">
+                                                    批量管理知识库
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="library-content-management.html">
+                                                    收录内容管理
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="library-recommend-check.html">
+                                                    推荐审核
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                           <li>
+                                <a href="filter-words-management.html">
+                                    <i class="icon-font">
+                                    </i>
+                                    过滤词汇管理
+                                </a>
+                            </li>
+                            <li>
+                                <a href="wipe-cache.html">
+                                    <i class="icon-trash">
+                                    </i>
+                                    清理缓存
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="icon-envelope">
+                                    </i>
+                                    Message
+                                    <span class="badge">
+                                        99+
+                                    </span>
+                                    <span class="caret">
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">
+                                            用户举报管理
+                                            <span class="badge">
+                                                42
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            资源审核
+                                            <span class="badge">
+                                                42
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            主题审核
+                                            <span class="badge">
+                                                42
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            帖子审核
+                                            <span class="badge">
+                                                42
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            消息审核
+                                            <span class="badge">
+                                                42
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            主题审核
+                                            <span class="badge">
+                                                42
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            回答审核
+                                            <span class="badge">
+                                                42
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            追加审核
+                                            <span class="badge">
+                                                42
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="icon-user">
+                                    </i>
+                                    Admin
+                                    <span class="caret">
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">
+                                            修改密码
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="page-wrapper">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-lg-3 card">
+                        <div class="panel panel-info">
+                          <div class="panel-heading">
+                            <div class="row">
+                              <div class="col-xs-6">
+                                <span class="glyphicon glyphicon-tasks"></span>
+                              </div>
+                              <div class="col-xs-6 text-right">
+                                <p class="announcement-heading">456</p>
+                                <p class="announcement-text">New Mentions!</p>
+                              </div>
+                            </div>
+                          </div>
+                            <div class="panel-footer announcement-bottom">
+                              <div class="row">
+                                <div class="col-xs-12">
+                                  资源总量
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-3 card">
+                        <div class="panel panel-info">
+                          <div class="panel-heading">
+                            <div class="row">
+                              <div class="col-xs-6">
+                                <span class="icon-comment"></span>
+                              </div>
+                              <div class="col-xs-6 text-right">
+                                <p class="announcement-heading">456</p>
+                                <p class="announcement-text">New Mentions!</p>
+                              </div>
+                            </div>
+                          </div>
+                            <div class="panel-footer announcement-bottom">
+                              <div class="row">
+                                <div class="col-xs-12">
+                                  主题总量
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-3 card">
+                        <div class="panel panel-info">
+                          <div class="panel-heading">
+                            <div class="row">
+                              <div class="col-xs-6">
+                                <span class="glyphicon glyphicon-comment"></span>
+                              </div>
+                              <div class="col-xs-6 text-right">
+                                <p class="announcement-heading">456</p>
+                                <p class="announcement-text">New Mentions!</p>
+                              </div>
+                            </div>
+                          </div>
+                            <div class="panel-footer announcement-bottom">
+                              <div class="row">
+                                <div class="col-xs-12">
+                                  问答总量
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-3 card">
+                        <div class="panel panel-info">
+                          <div class="panel-heading">
+                            <div class="row">
+                              <div class="col-xs-6">
+                                <span class="glyphicon glyphicon-user"></span>
+                              </div>
+                              <div class="col-xs-6 text-right">
+                                <p class="announcement-heading">456</p>
+                                <p class="announcement-text">New Mentions!</p>
+                              </div>
+                            </div>
+                          </div>
+                            <div class="panel-footer announcement-bottom">
+                              <div class="row">
+                                <div class="col-xs-12">
+                                  用户总量
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row statistical-graph">
+                    <div class="col-xs-12">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <i class="icon-bar-chart">
+                                    </i>
+                                    一周内的上传下载量
+                                </h3>
+                            </div>
+                            <div class="panel-body pic-container">
+                                <div class="pic">
+                                    <div id="line">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-right">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <i class="icon-bar-chart">
+                                    </i>
+                                    已发布资源所需积分
+                                </h3>
+                            </div>
+                            <div class="panel-body pic-container">
+                                <div class="pic">
+                                    <div id="pie1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <i class="icon-bar-chart">
+                                    </i>
+                                    这里是饼图的标题
+                                </h3>
+                            </div>
+                            <div class="panel-body pic-container">
+                                <div class="pic">
+                                    <div id="pie2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/TothingWay.js">
+        </script>
+        <script src="js/echarts.js">
+        </script>
+        <script src="js/admin.js">
+        </script>
+    </body>
+</html>

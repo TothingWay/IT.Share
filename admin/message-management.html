@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+            资源共享平台
+        </title>
+        <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport"/>
+        <link href="css/TothingWay.css" rel="stylesheet"/>
+        <link href="css/admin.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">
+                                IT.SHARE后台管理系统
+                            </span>
+                            <span class="icon-bar">
+                            </span>
+                            <span class="icon-bar">
+                            </span>
+                            <span class="icon-bar">
+                            </span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            IT.SHARE后台管理系统
+                        </a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav side-nav">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a role="button" href="index.html">
+                                        <i class="icon-dashboard">
+                                        </i>
+                                        本站概况
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a role="button" href="admin-set.html">
+                                        <i class="icon-cogs">
+                                        </i>
+                                        管理员设置
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <a role="button" data-toggle="collapse" data-parent=".side-nav" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                                        <i class="icon-user">
+                                        </i>
+                                        用户管理
+                                        <i class="icon icon-angle-left">
+                                        </i>
+                                    </a>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false">
+                                    <div class="panel-body">
+                                        <ul>
+                                           <li>
+                                                <a href="user-batch-management.html">
+                                                    用户批量管理
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="report-management.html"> 
+                                                    用户举报管理
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent=".side-nav" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <i class="icon-tasks">
+                                        </i>
+                                        资源管理
+                                        <i class="icon icon-angle-left">
+                                        </i>
+                                    </a>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li>
+                                                <a href="resource-batch-management.html">
+                                                    资源批量管理
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="resource-audit.html">
+                                                    资源审核
+                                                </a>
+                                            </li>
+                                             <li>
+                                                <a href="uploading.html">
+                                                    资源上传
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <a class="collapsed active" role="button" data-toggle="collapse" data-parent=".side-nav" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <i class="icon-group">
+                                        </i>
+                                        用户论坛管理
+                                        <i class="icon icon-angle-down">
+                                        </i>
+                                    </a>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li>
+                                                <a href="topic-management.html">
+                                                    主题管理
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="post-management.html">
+                                                    帖子管理
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="message-management.html">
+                                                    消息管理
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="statistics-recommend.html">
+                                                    统计与推荐
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFour">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent=".side-nav" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        <i class="icon-comments-alt">
+                                        </i>
+                                        在线问答管理
+                                        <i class="icon icon-angle-left">
+                                        </i>
+                                    </a>
+                                </div>
+                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                    <div class="panel-body">
+                                        <ul>
+                                             <li>
+                                                <a href="issues-management.html">
+                                                    问题管理
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="answer-management.html">
+                                                    回答管理
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="additional-content-management.html">
+                                                    追加管理
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="question-recommend.html">
+                                                    问答统计与推荐
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFour">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent=".side-nav" href="#collapseFive" aria-expanded="false" aria-controls="collapseFour">
+                                        <i class="icon-comments-alt">
+                                        </i>
+                                        知识库管理
+                                        <i class="icon icon-angle-left">
+                                        </i>
+                                    </a>
+                                </div>
+                                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li>
+                                                <a href="new-library.html">
+                                                    批量管理知识库
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="library-content-management.html">
+                                                    收录内容管理
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="library-recommend-check.html">
+                                                    推荐审核
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                           <li>
+                                <a href="filter-words-management.html">
+                                    <i class="icon-font">
+                                    </i>
+                                    过滤词汇管理
+                                </a>
+                            </li>
+                            <li>
+                                <a href="wipe-cache.html">
+                                    <i class="icon-trash">
+                                    </i>
+                                    清理缓存
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="icon-envelope">
+                                    </i>
+                                    Message
+                                    <span class="badge">
+                                        99+
+                                    </span>
+                                    <span class="caret">
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">
+                                            用户举报管理
+                                            <span class="badge">
+                                                42
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            资源审核
+                                            <span class="badge">
+                                                42
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            主题审核
+                                            <span class="badge">
+                                                42
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            帖子审核
+                                            <span class="badge">
+                                                42
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            消息审核
+                                            <span class="badge">
+                                                42
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            主题审核
+                                            <span class="badge">
+                                                42
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            回答审核
+                                            <span class="badge">
+                                                42
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            追加审核
+                                            <span class="badge">
+                                                42
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="icon-user">
+                                    </i>
+                                    Admin
+                                    <span class="caret">
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">
+                                            修改密码
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="page-wrapper">
+                <ul id="myTabs" class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#content1" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">
+                            已发布消息
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#content2" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">
+                            已删除消息
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#content3" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">
+                            未审核消息
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#content4" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">
+                            已封禁消息
+                        </a>
+                    </li>
+                    <li role="presentation" class="dropdown dropdown-sort">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            排序方式
+                            <span class="caret">
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-sort">
+                            <li>
+                                <a href="#">
+                                    按时间排序
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    按下载次数排序
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    按积分升序排序
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    按积分降序排序
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div id="myTabContent" class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="content1" aria-labelledby="home-tab">
+                        <div class="management-content">
+                            <div class="panel panel-default">
+                                <!-- Default panel contents -->
+                                <div class="panel-heading">
+                                    这里是消息的内容
+                                </div>
+                                <!-- Table -->
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    发布人
+                                                </th>
+                                                <th>
+                                                    发布时间
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    王炜
+                                                </td>
+                                                <td>
+                                                    2016-7-11
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="panel-body btn-container">
+                                    <a class="btn btn-info btn-xs" href="#" role="button">
+                                        删除此消息
+                                    </a>
+                                    <a class="btn btn-info btn-xs" href="#" role="button" data-toggle="modal" data-target="#myModal">
+                                        查看此消息上下文
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="content2" aria-labelledby="profile-tab">
+                        <div class="management-content">
+                            <div class="panel panel-default">
+                                <!-- Default panel contents -->
+                                <div class="panel-heading">
+                                    这里是消息的内容
+                                </div>
+                                <!-- Table -->
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    发布人
+                                                </th>
+                                                <th>
+                                                    发布时间
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    王炜
+                                                </td>
+                                                <td>
+                                                    2016-7-11
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="panel-body btn-container">
+                                    <a class="btn btn-info btn-xs" href="#" role="button">
+                                        彻底删除此消息
+                                    </a>
+                                    <a class="btn btn-info btn-xs" href="#" role="button">
+                                        恢复此消息
+                                    </a>
+                                    <a class="btn btn-info btn-xs" href="#" role="button" data-toggle="modal" data-target="#myModal">
+                                        查看此消息上下文
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="content3" aria-labelledby="dropdown1-tab">
+                        <div class="management-content">
+                            <div class="panel panel-default">
+                                <!-- Default panel contents -->
+                                <div class="panel-heading">
+                                    这里是消息的概述
+                                </div>
+                                <!-- Table -->
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    发布人
+                                                </th>
+                                                <th>
+                                                    发布时间
+                                                </th>
+                                                <th>
+                                                    所在板块
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    王炜
+                                                </td>
+                                                <td>
+                                                    2016-7-11
+                                                </td>
+                                                <td>
+                                                    javascript
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="panel-body btn-container">
+                                    <p>
+                                        <span class="red">
+                                            审核原因:
+                                        </span>
+                                        这里是审核的原因
+                                    </p>
+                                    <p>
+                                        <span class="red">
+                                            审核词汇:
+                                        </span>
+                                        这里是审核的词汇
+                                    </p>
+                                    <a class="btn btn-info btn-xs" href="#" role="button">
+                                        通过审核并发布
+                                    </a>
+                                    <a class="btn btn-info btn-xs" href="#" role="button">
+                                        不通过审核并发送通知
+                                    </a>
+                                    <a class="btn btn-info btn-xs" href="#" role="button" data-toggle="modal" data-target="#myModal">
+                                        查看此贴上下文
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="content4" aria-labelledby="dropdown2-tab">
+                        <div class="management-content">
+                            <div class="panel panel-default">
+                                <!-- Default panel contents -->
+                                <div class="panel-heading">
+                                    这里是消息的概述
+                                </div>
+                                <!-- Table -->
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    发布人
+                                                </th>
+                                                <th>
+                                                    发布时间
+                                                </th>
+                                                <th>
+                                                    所在板块
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    王炜
+                                                </td>
+                                                <td>
+                                                    2016-7-11
+                                                </td>
+                                                <td>
+                                                    javascript
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="panel-body btn-container">
+                                    <p>
+                                        <span class="red">
+                                            审核原因:
+                                        </span>
+                                        这里是审核的原因
+                                    </p>
+                                    <p>
+                                        <span class="red">
+                                            审核词汇:
+                                        </span>
+                                        这里是审核的词汇
+                                    </p>
+                                    <a class="btn btn-info btn-xs" href="#" role="button">
+                                        封禁此用户
+                                    </a>
+                                    <a class="btn btn-info btn-xs" href="#" role="button" data-toggle="modal" data-target="#myModal">
+                                        查看此贴上下文
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade text" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">
+                            这里是主题的概述
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <p class="user-information information-content">
+                            发布人:
+                            <span>
+                                王炜
+                            </span>
+                            发布时间:
+                            <span>
+                                2016-7-12
+                            </span>
+                        </p>
+                        这里是主题的内容，傻逼都知道这里是内容傻逼都知道这里是内容傻逼都知道这里是内容傻逼都知道这里是内容傻逼都知道这里是内容傻逼都知道这里是内容傻逼都知道这里是内容傻逼都知道这里是内容傻逼都知道这里是内容傻逼都知道这里是内容
+                        <p class="information-content">
+                            帖子总数:
+                            <span>
+                                6
+                            </span>
+                            浏览次数:
+                            <span>
+                                10
+                            </span>
+                        </p>
+                    </div>
+                    <div class="modal-body additional-container">
+                        这里是回答的内容
+                        <p class="information-content">
+                            发布人:
+                            <span>
+                                王炜
+                            </span>
+                            发布时间:
+                            <span>
+                                2016-7-12
+                            </span>
+                        </p>
+                    </div>
+                    <div class="modal-body additional-body">
+                        这里是追答的内容
+                        <p class="information-content">
+                            发布人:
+                            <span>
+                                王炜
+                            </span>
+                            发布时间:
+                            <span>
+                                2016-7-12
+                            </span>
+                        </p>
+                    </div>
+                    <div class="modal-body additional-body">
+                        这里是追答的内容
+                        <p class="information-content">
+                            发布人:
+                            <span>
+                                王炜
+                            </span>
+                            发布时间:
+                            <span>
+                                2016-7-12
+                            </span>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/TothingWay.js">
+        </script>
+        <script src="js/admin.js">
+        </script>
+    </body>
+</html>

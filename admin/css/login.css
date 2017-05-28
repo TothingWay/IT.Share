@@ -1,0 +1,95 @@
+html,
+body {
+  font-family: 'Microsoft YaHei';
+
+  position: relative;
+
+  height: 100%;
+}
+
+.bg {
+  background: url(http://oqlse9rck.bkt.clouddn.com/bg.jpg) repeat;
+}
+
+.login-container {
+  display: table;
+  overflow: hidden;
+
+  width: 100%;
+  height: 100%;
+}
+
+.login-container .login-content {
+  display: table-cell;
+
+  vertical-align: middle;
+}
+
+.login-container .login-content .login-form {
+  width: 48%;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 25px;
+
+  border-radius: 6px;
+  background: #edeff1;
+}
+
+.login-form .form-control {
+  height: 42px;
+  padding: 8px 35px;
+
+  border: 2px solid transparent;
+  box-shadow: none;
+}
+
+.login-form .form-group {
+  position: relative;
+}
+
+.login-form label {
+  font-size: 16px;
+
+  position: absolute;
+  top: 10px;
+  left: 15px;
+
+  color: #d0d2d3;
+}
+
+.login-form .form-control:focus {
+  border: 2px solid #1abc9c;
+}
+
+.login-form .form-control:focus + label {
+  color: #1abc9c;
+}
+
+.btn-primary {
+  -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+          transition: border .25s linear, color .25s linear, background-color .25s linear;
+
+  border: none;
+  background-color: #1abc9c;
+
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.btn-primary:hover {
+  background-color: #48c9b0;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  text-align: center;
+}
+
+.error {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  color: #e74c3c;
+}
