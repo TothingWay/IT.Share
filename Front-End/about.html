@@ -1,187 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <title>
-            资源共享平台
-        </title>
-        <link rel="shortcut icon" href="http://oqlse9rck.bkt.clouddn.com/favicon.ico">
-        <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport"/>
-        <link href="css/help-code.css" rel="stylesheet"/>
-        <link href="css/help.css" rel="stylesheet"/>
-    </head>
-    <body>
-        <div class="screen-phone">
-            <div class="cell">
-                <div class="banner">
-                    <div class="screen-shape">
-                    </div>
-                    <p class="plase-rotate">
-                        窗口太小，看不到啦
-                    </p>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <title>
+        资源共享平台
+    </title>
+    <link rel="shortcut icon" href="http://oqlse9rck.bkt.clouddn.com/favicon.ico">
+    <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport" />
+    <link href="css/help-code.css" rel="stylesheet" />
+    <link href="css/help.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!--当窗口小于319px时，不显示内容，提示窗口太小-->
+    <div class="screen-phone">
+        <div class="cell">
+            <div class="banner">
+                <div class="screen-shape">
                 </div>
+                <p class="plase-rotate">
+                    窗口太小，看不到啦
+                </p>
             </div>
         </div>
-        <div class="swiper-container" id="swiper-main">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide help-bg">
-                    <a href="#" class="arrow" id="arrow">
-                        <i class="icon-angle-down">
-                        </i>
+    </div>
+
+    <!--竖向滚动轮播开始-->
+    <div class="swiper-container" id="swiper-main">
+        <div class="swiper-wrapper">
+
+            <!--第一屏-->
+            <div class="swiper-slide help-bg">
+                <!--导向箭头-->
+                <a href="#" class="arrow" id="arrow">
+                    <!--导向箭头图标-->
+                    <i class="icon-angle-down"></i>
+                </a>
+            </div>
+
+            <!--第二屏-->
+            <div class="resource-contain swiper-slide" id="resource-contain">
+                <div class="box">
+                    <!--第二屏标题-->
+                    <h5 class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s">
+                        IT.Share 包含什么？
+                    </h5>
+                    <!--第二屏中间内容部分-->
+                    <div class="items list-inline container ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <!--源代码内容-->
+                                <a class="pc" href="#">
+                                    <!--右半个圆-->
+                                    <u class="cl"></u>
+                                    <!--左半个圆-->
+                                    <u class="cr"></u>
+                                    <!--源代码图标-->
+                                    <i></i>
+                                    <!--标题-->
+                                    <strong>源代码</strong>
+                                    <!--hover后显示的内容-->
+                                    <p>包含各种编程源代码</p>
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <!--PDF资料内容-->
+                                <a class="mobi" href="#">
+                                    <!--右半个圆-->
+                                    <u class="cl"></u>
+                                    <!--左半个圆-->
+                                    <u class="cr"></u>
+                                    <!--PDF资料图标-->
+                                    <i></i>
+                                    <!--标题-->
+                                    <strong>PDF资料</strong>
+                                    <!--hover后显示的内容-->
+                                    <p>包含编程PDF资料</p>
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <!--教程视频内容-->
+                                <a class="sys" href="#">
+                                    <!--右半个圆-->
+                                    <u class="cl"></u>
+                                    <!--左半个圆-->
+                                    <u class="cr"></u>
+                                    <!--教程视频图标-->
+                                    <i></i>
+                                    <!--标题-->
+                                    <strong>教程视屏</strong>
+                                    <!--hover后显示的内容-->
+                                    <p>包含编程教学视屏</p>
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <!--安装包内容-->
+                                <a class="app" href="#">
+                                    <!--右半个圆-->
+                                    <u class="cl"></u>
+                                    <!--左半个圆-->
+                                    <u class="cr"></u>
+                                    <!--安装包图标-->
+                                    <i></i>
+                                    <!--标题-->
+                                    <strong>安装包</strong>
+                                    <!--hover后显示的内容-->
+                                    <p>含有常用编程软件</p>
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <!--图片素材内容-->
+                                <a class="host" href="#">
+                                    <!--右半个圆-->
+                                    <u class="cl"></u>
+                                    <!--左半个圆-->
+                                    <u class="cr"></u>
+                                    <!--图片素材图标-->
+                                    <i></i>
+                                    <!--标题-->
+                                    <strong>图片素材</strong>
+                                    <!--hover后显示的内容-->
+                                    <p>含PSD，精美图片</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--查看更多按钮-->
+                    <a href="#" class="view-more ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                        <span>
+                            View more
+                        </span>
+                        <!--右方向图标-->
+                        <i class="icon-caret-right"></i>
                     </a>
                 </div>
-                <div class="resource-contain swiper-slide" id="resource-contain">
-                    <div class="box">
-                        <h5 class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s">
-                            IT.Share 包含什么？
-                        </h5>
-                        <div class="items list-inline container ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-6 col-md-3">
-                                    <a class="pc" href="#">
-                                        <u class="cl">
-                                        </u>
-                                        <u class="cr">
-                                        </u>
-                                        <i>
-                                        </i>
-                                        <strong>
-                                            源代码
-                                        </strong>
-                                        <p>
-                                            包含各种编程源代码
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-3">
-                                    <a class="mobi" href="#">
-                                        <u class="cl">
-                                        </u>
-                                        <u class="cr">
-                                        </u>
-                                        <i>
-                                        </i>
-                                        <strong>
-                                            PDF资料
-                                        </strong>
-                                        <p>
-                                            包含编程PDF资料
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-3">
-                                    <a class="sys" href="#">
-                                        <u class="cl">
-                                        </u>
-                                        <u class="cr">
-                                        </u>
-                                        <i>
-                                        </i>
-                                        <strong>
-                                            教程视屏
-                                        </strong>
-                                        <p>
-                                            包含编程教学视屏
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-3">
-                                    <a class="app" href="#">
-                                        <u class="cl">
-                                        </u>
-                                        <u class="cr">
-                                        </u>
-                                        <i>
-                                        </i>
-                                        <strong>
-                                            安装包
-                                        </strong>
-                                        <p>
-                                            含有常用编程软件
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-3">
-                                    <a class="host" href="#">
-                                        <u class="cl">
-                                        </u>
-                                        <u class="cr">
-                                        </u>
-                                        <i>
-                                        </i>
-                                        <strong>
-                                            图片素材
-                                        </strong>
-                                        <p>
-                                            含PSD，精美图片
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
+            </div>
+
+            <!--第三屏-->
+            <div class="contact-us swiper-slide">
+                <div class="container">
+                    <div class="row">
+                        <!--二维码图片（左边部分）-->
+                        <div class="ani col-xs-12 col-sm-6 col-md-3" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s">
+                            <img src="http://oqlse9rck.bkt.clouddn.com/index-code.png" width="156px" height="156px" />
                         </div>
-                        <a href="#" class="view-more ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
-                            <span>
-                                View more
-                            </span>
-                            <i class="icon-caret-right">
-                            </i>
-                        </a>
-                    </div>
-                </div>
-                <div class="contact-us swiper-slide">
-                    <div class="container">
-                        <div class="row">
-                            <div class="ani col-xs-12 col-sm-6 col-md-3" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s">
-                                <img src="http://oqlse9rck.bkt.clouddn.com/index-code.png" width="156px" height="156px"/>
-                            </div>
-                            <div class="ani col-xs-12 col-sm-6 col-md-4" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s">
-                                <div class="address">
-                                    <div class="tel">
-                                    </div>
-                                    <p>
-                                        中国
-                                        <span>
-                                            ·
-                                        </span>
-                                        杭州
-                                        下沙大学城
-                                        <br/>
-                                        联系电话：020-28100617
-                                        <br/>
-                                        地址：杭州 下沙街道
-                                        <br/>
-                                        邮编：310000
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="rights ani col-xs-12 col-sm-6 col-md-5" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s">
-                                <p class="right">
-                                    Email：ww-xsw@qq.com
-                                    <br/>
-                                    中文域名：资源分享平台
-                                    <br/>
-                                    www.IT.Share.com
-                                    <br/>
-                                    Copyright all rights reserved
-                                    IT.Share 版权所有
+                        <!--联系方式（中间部分）-->
+                        <div class="ani col-xs-12 col-sm-6 col-md-4" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s">
+                            <div class="address">
+                                <!--电话图片-->
+                                <div class="tel"></div>
+                                <p>
+                                    中国
+                                    <span> ·</span>
+                                    杭州 下沙大学城
+                                    <br/> 联系电话：020-28100617
+                                    <br/> 地址：杭州 下沙街道
+                                    <br/> 邮编：310000
                                 </p>
                             </div>
-                            <div class="line-box ani col-xs-12 col-sm-12 col-md-12" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s">
-                                <div class="line">
-                                </div>
-                            </div>
-                            <div class="title ani col-xs-12 col-sm-12 col-md-12" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s">
-                                <div class="txt">
-                                </div>
-                            </div>
+                        </div>
+                        <!--域名版权（右边部分）-->
+                        <div class="rights ani col-xs-12 col-sm-6 col-md-5" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s">
+                            <p class="right">
+                                Email：ww-xsw@qq.com
+                                <br/> 中文域名：资源分享平台
+                                <br/> www.IT.Share.com
+                                <br/> Copyright all rights reserved IT.Share 版权所有
+                            </p>
+                        </div>
+                        <div class="line-box ani col-xs-12 col-sm-12 col-md-12" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s">
+                            <!--分割横线-->
+                            <div class="line"></div>
+                        </div>
+                        <div class="title ani col-xs-12 col-sm-12 col-md-12" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s">
+                            <!--文字信息图片-->
+                            <div class="txt"></div>
                         </div>
                     </div>
                 </div>
             </div>
+            
         </div>
-        <script src="js/help-code.js">
-        </script>
-        <script src="js/help.js">
-        </script>
-    </body>
+        <!--/.swiper-wrapper-->
+    </div>
+    <!--/.swiper-container-->
+    <script src="js/help-code.js">
+    </script>
+    <script src="js/help.js">
+    </script>
+</body>
+
 </html>

@@ -1,840 +1,893 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-    <head>
-        <meta charset="utf-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title>
-            资源共享平台
-        </title>
-        <link rel="shortcut icon" href="http://oqlse9rck.bkt.clouddn.com/favicon.ico">
-        <link href="css/TothingWay.css" rel="stylesheet"/>
-        <link href="css/exchange.css" rel="stylesheet"/>
-    </head>
-    <body>
-        <nav class="navbar navbar-default nav-scroll navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">
-                            IT.Share
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+        资源共享平台
+    </title>
+    <link rel="shortcut icon" href="http://oqlse9rck.bkt.clouddn.com/favicon.ico">
+    <link href="css/TothingWay.css" rel="stylesheet" />
+    <link href="css/exchange.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!--导航-->
+    <nav class="navbar navbar-default nav-scroll navbar-fixed-top">
+        <div class="container">
+            <!--导航左半部分-->
+            <div class="navbar-header">
+                <!--手机模式导航按钮-->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar">
+                    <span class="sr-only">
+                        IT.Share
+                    </span>
+                    <span class="icon-bar">
+                    </span>
+                    <span class="icon-bar">
+                    </span>
+                    <span class="icon-bar">
+                    </span>
+                </button>
+                <!--logo-->
+                <a class="navbar-brand" href="index.html"></a>
+            </div>
+            <!--导航右半部分-->
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">
+                            首页
+                        </a>
+                    </li>
+                    <li>
+                        <a href="resource-index.html">
+                            资料中心
+                        </a>
+                    </li>
+                    <li>
+                        <a href="forum-index.html">
+                            交流分享
+                        </a>
+                    </li>
+                    <li>
+                        <a href="repository-index.html">
+                            知识百科
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="quiz-index.html">
+                            在线问答
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html" target="_blank">
+                            关于我们
+                        </a>
+                    </li>
+                    <!--登录成功后显示的个人信息下拉菜单-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            张三
+                            <span class="caret">
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header">
+                                未读消息
+                                <span class="badge">
+                                    61
+                                </span>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    未读消息1
+                                    <span class="badge">
+                                        2
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    未读消息2
+                                    <span class="badge">
+                                        42
+                                    </span>
+                                </a>
+                            </li>
+                            <li role="separator" class="divider">
+                            </li>
+                            <li>
+                                <a href="#">
+                                    注销
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.nav-collapse -->
+        </div>
+    </nav>
+
+    <!--banner-->
+    <div class="cover">
+        <p class="quiz-title">
+            创造始于问题，有了问题才会思考，有了思考，才有解决问题的方法，才有找到独立思路的可能。 —— 陶行知
+        </p>
+        <div class="container">
+            <form role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control search" placeholder="问题搜索" />
+                    <!--搜索按钮-->
+                    <a href="#" class="btn-search">
+                        <span class="glyphicon glyphicon-search">
                         </span>
-                        <span class="icon-bar">
-                        </span>
-                        <span class="icon-bar">
-                        </span>
-                        <span class="icon-bar">
-                        </span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">
-                       
                     </a>
                 </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="index.html">
-                                首页
-                            </a>
-                        </li>
-                        <li>
-                            <a href="resource-index.html">
-                                资料中心
-                            </a>
-                        </li>
-                        <li>
-                            <a href="forum-index.html">
-                                交流分享
-                            </a>
-                        </li>
-                        <li>
-                            <a href="repository-index.html">
-                                知识百科
-                            </a>
-                        </li>
-                        <li class="active">
-                            <a href="quiz-index.html">
-                                在线问答
-                            </a>
-                        </li>
-                        <li>
-                            <a href="about.html" target="_blank">
-                                关于我们
-                            </a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                张三
+            </form>
+        </div>
+    </div>
+
+    <!--内容部分-->
+    <div class="container quiz-container">
+        <div class="clearfix">
+            <!--提问按钮-->
+            <button class="btn btn-primary new-quiz btn-quiz">
+                我要提问
+            </button>
+            <div class="btn-group pull-right">
+                <button class="btn btn-default dropdown-toggle quiz-sort" data-toggle="dropdown" type="button" aria-expanded="false">
+                    <span class="visible-sm-inline visible-md-inline visible-lg-inline">
+                        排序
+                    </span>
+                    <!--在手机模式下显示图标-->
+                    <span class="visible-xs-inline">
+                        <span class="glyphicon glyphicon-sort">
+                        </span>
+                    </span>
+                    <span class="caret">
+                    </span>
+                </button>
+                <!--排序下拉列表-->
+                <ul class="dropdown-menu pull-right">
+                    <li>
+                        <a href="#">
+                            从新到旧
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            从旧到新
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            最多回复
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--问题筛选按钮-->
+            <button class="btn btn-warning pull-right quiz-screen" type="button" data-toggle="collapse" data-target="#collapseScreen">
+                问题筛选
+            </button>
+            <!--筛选内容框-->
+            <div class="collapse" id="collapseScreen">
+                <div class="well clearfix">
+                    <div class="col-sm-1 col-xs-12 all">
+                        是否解决:
+                    </div>
+                    <div class="col-sm-11 col-xs-12">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    是
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    否
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-1 col-xs-12 all">
+                        提问分类:
+                    </div>
+                    <div class="col-sm-11 col-xs-12">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    求资源
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    求答案
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-1 col-xs-12 all">
+                        总分类:
+                    </div>
+                    <div class="col-sm-11 col-xs-12">
+                        <ul>
+                            <li class="active">
+                                <a href="#">
+                                    大板块1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    大板块2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    大板块3
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    大板块4
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    大板块5
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    大板块6
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-1 col-xs-12 all">
+                        子分类:
+                    </div>
+                    <div class="col-sm-11 col-xs-12">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    子板块1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    子板块2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    子板块3
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    子板块4
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    子板块5
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    子板块6
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    子板块6
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    子板块6
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    子板块6
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    子板块6
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    子板块6
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    子板块6
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--/.well-->
+            </div>
+            <!--/.collapse-->
+        </div>
+        <!--分割线-->
+        <hr/>
+        <!--标题-->
+        <p>
+            全部
+        </p>
+        <!--在线问答列表-->
+        <ul class="quiz-list">
+            <!--wrap-->
+            <li class="row">
+                <!--问题标题信息-->
+                <div class="col-md-7 col-sm-9 col-xs-12">
+                    <div class="avatar pull-left">
+                        <a href="my-center-resource.html" class="pull-left" data-toggle="tooltip" title="王炜">
+                            <img src="http://oqlse9rck.bkt.clouddn.com/avatar.jpg" class="user-img"/>
+                        </a>
+                    </div>
+                    <h2>
+                        <a href="quiz-detal.html">
+                            如何能够解决，css定位布局中，父容器不能自适应定义absolute的子元素的高度。
+                        </a>
+                        <br/>
+                        <small class="hidden-xs">
+                            <span>
+                                4月之前
+                            </span>
+                        </small>
+                        <small class="visible-xs-inline">
+                            <span>
+                                4月之前
+                            </span>
+                        </small>
+                    </h2>
+                </div>
+                <!--悬赏-->
+                <div class="col-md-1 hidden-sm hidden-xs stats">
+                    <span class="human-readable-number">
+                            9
+                        </span>
+                    <br/>
+                    <small>
+                            悬赏
+                        </small>
+                </div>
+                <!--回答-->
+                <div class="col-md-1 hidden-sm hidden-xs stats">
+                    <span class="human-readable-number">
+                            99
+                        </span>
+                    <br/>
+                    <small>
+                            回答
+                        </small>
+                </div>
+                <!--问题是否被解决-->
+                <div class="col-md-3 col-sm-3 teaser hidden-xs">
+                    <div class="card">
+                        <span class="glyphicon glyphicon-question-sign"></span> 待解决
+                        <br/>
+                        <a href="#">
+                            <i class="icon-hand-up">
+                            </i>
+                            置顶
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <!--wrap-->
+            <li class="row">
+                <!--问题标题信息-->
+                <div class="col-md-7 col-sm-9 col-xs-12">
+                    <div class="avatar pull-left">
+                        <a href="my-center-resource.html" class="pull-left" data-toggle="tooltip" title="王炜">
+                            <img src="http://oqlse9rck.bkt.clouddn.com/avatar.jpg" class="user-img"/>
+                        </a>
+                    </div>
+                    <h2>
+                        <a href="quiz-detal.html">
+                            如何能够解决，css定位布局中，父容器不能自适应定义absolute的子元素的高度。
+                        </a>
+                        <br/>
+                        <small class="hidden-xs">
+                            <span>
+                                4月之前
+                            </span>
+                        </small>
+                        <small class="visible-xs-inline">
+                            <span>
+                                4月之前
+                            </span>
+                        </small>
+                    </h2>
+                </div>
+                <!--悬赏-->
+                <div class="col-md-1 hidden-sm hidden-xs stats">
+                    <span class="human-readable-number">
+                            9
+                        </span>
+                    <br/>
+                    <small>
+                            悬赏
+                        </small>
+                </div>
+                <!--回答-->
+                <div class="col-md-1 hidden-sm hidden-xs stats">
+                    <span class="human-readable-number">
+                            99
+                        </span>
+                    <br/>
+                    <small>
+                            回答
+                        </small>
+                </div>
+                <!--问题是否被解决-->
+                <div class="col-md-3 col-sm-3 teaser hidden-xs">
+                    <div class="card">
+                        <span class="glyphicon glyphicon-question-sign"></span> 待解决
+                        <br/>
+                        <a href="#">
+                            <i class="icon-hand-up">
+                            </i>
+                            置顶
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <!--wrap-->
+            <li class="row">
+                <!--问题标题信息-->
+                <div class="col-md-7 col-sm-9 col-xs-12">
+                    <div class="avatar pull-left">
+                        <a href="my-center-resource.html" class="pull-left" data-toggle="tooltip" title="王炜">
+                            <img src="http://oqlse9rck.bkt.clouddn.com/avatar.jpg" class="user-img"/>
+                        </a>
+                    </div>
+                    <h2>
+                        <a href="quiz-detal.html">
+                            如何能够解决，css定位布局中，父容器不能自适应定义absolute的子元素的高度。
+                        </a>
+                        <br/>
+                        <small class="hidden-xs">
+                            <span>
+                                4月之前
+                            </span>
+                        </small>
+                        <small class="visible-xs-inline">
+                            <span>
+                                4月之前
+                            </span>
+                        </small>
+                    </h2>
+                </div>
+                <!--悬赏-->
+                <div class="col-md-1 hidden-sm hidden-xs stats">
+                    <span class="human-readable-number">
+                            9
+                        </span>
+                    <br/>
+                    <small>
+                            悬赏
+                        </small>
+                </div>
+                <!--回答-->
+                <div class="col-md-1 hidden-sm hidden-xs stats">
+                    <span class="human-readable-number">
+                            99
+                        </span>
+                    <br/>
+                    <small>
+                            回答
+                        </small>
+                </div>
+                <!--问题是否被解决-->
+                <div class="col-md-3 col-sm-3 teaser hidden-xs">
+                    <div class="card">
+                        <span class="glyphicon glyphicon-question-sign"></span> 待解决
+                        <br/>
+                        <a href="#">
+                            <i class="icon-hand-up">
+                            </i>
+                            置顶
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <!--wrap-->
+            <li class="row">
+                <!--问题标题信息-->
+                <div class="col-md-7 col-sm-9 col-xs-12">
+                    <div class="avatar pull-left">
+                        <a href="my-center-resource.html" class="pull-left" data-toggle="tooltip" title="王炜">
+                            <img src="http://oqlse9rck.bkt.clouddn.com/avatar.jpg" class="user-img"/>
+                        </a>
+                    </div>
+                    <h2>
+                        <a href="quiz-detal.html">
+                            如何能够解决，css定位布局中，父容器不能自适应定义absolute的子元素的高度。
+                        </a>
+                        <br/>
+                        <small class="hidden-xs">
+                            <span>
+                                4月之前
+                            </span>
+                        </small>
+                        <small class="visible-xs-inline">
+                            <span>
+                                4月之前
+                            </span>
+                        </small>
+                    </h2>
+                </div>
+                <!--悬赏-->
+                <div class="col-md-1 hidden-sm hidden-xs stats">
+                    <span class="human-readable-number">
+                            9
+                        </span>
+                    <br/>
+                    <small>
+                            悬赏
+                        </small>
+                </div>
+                <!--回答-->
+                <div class="col-md-1 hidden-sm hidden-xs stats">
+                    <span class="human-readable-number">
+                            99
+                        </span>
+                    <br/>
+                    <small>
+                            回答
+                        </small>
+                </div>
+                <!--问题是否被解决-->
+                <div class="col-md-3 col-sm-3 teaser hidden-xs">
+                    <div class="card">
+                        <span class="glyphicon glyphicon-question-sign"></span> 待解决
+                        <br/>
+                        <a href="#">
+                            <i class="icon-hand-up">
+                            </i>
+                            置顶
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <!--wrap-->
+            <li class="row">
+                <!--问题标题信息-->
+                <div class="col-md-7 col-sm-9 col-xs-12">
+                    <div class="avatar pull-left">
+                        <a href="my-center-resource.html" class="pull-left" data-toggle="tooltip" title="王炜">
+                            <img src="http://oqlse9rck.bkt.clouddn.com/avatar.jpg" class="user-img"/>
+                        </a>
+                    </div>
+                    <h2>
+                        <a href="quiz-detal.html">
+                            如何能够解决，css定位布局中，父容器不能自适应定义absolute的子元素的高度。
+                        </a>
+                        <br/>
+                        <small class="hidden-xs">
+                            <span>
+                                4月之前
+                            </span>
+                        </small>
+                        <small class="visible-xs-inline">
+                            <span>
+                                4月之前
+                            </span>
+                        </small>
+                    </h2>
+                </div>
+                <!--悬赏-->
+                <div class="col-md-1 hidden-sm hidden-xs stats">
+                    <span class="human-readable-number">
+                            9
+                        </span>
+                    <br/>
+                    <small>
+                            悬赏
+                        </small>
+                </div>
+                <!--回答-->
+                <div class="col-md-1 hidden-sm hidden-xs stats">
+                    <span class="human-readable-number">
+                            99
+                        </span>
+                    <br/>
+                    <small>
+                            回答
+                        </small>
+                </div>
+                <!--问题是否被解决-->
+                <div class="col-md-3 col-sm-3 teaser hidden-xs">
+                    <div class="card">
+                        <span class="glyphicon glyphicon-question-sign"></span> 待解决
+                        <br/>
+                        <a href="#">
+                            <i class="icon-hand-up">
+                            </i>
+                            置顶
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <!--wrap-->
+            <li class="row">
+                <!--问题标题信息-->
+                <div class="col-md-7 col-sm-9 col-xs-12">
+                    <div class="avatar pull-left">
+                        <a href="my-center-resource.html" class="pull-left" data-toggle="tooltip" title="王炜">
+                            <img src="http://oqlse9rck.bkt.clouddn.com/avatar.jpg" class="user-img"/>
+                        </a>
+                    </div>
+                    <h2>
+                        <a href="quiz-detal.html">
+                            如何能够解决，css定位布局中，父容器不能自适应定义absolute的子元素的高度。
+                        </a>
+                        <br/>
+                        <small class="hidden-xs">
+                            <span>
+                                4月之前
+                            </span>
+                        </small>
+                        <small class="visible-xs-inline">
+                            <span>
+                                4月之前
+                            </span>
+                        </small>
+                    </h2>
+                </div>
+                <!--悬赏-->
+                <div class="col-md-1 hidden-sm hidden-xs stats">
+                    <span class="human-readable-number">
+                            9
+                        </span>
+                    <br/>
+                    <small>
+                            悬赏
+                        </small>
+                </div>
+                <!--回答-->
+                <div class="col-md-1 hidden-sm hidden-xs stats">
+                    <span class="human-readable-number">
+                            99
+                        </span>
+                    <br/>
+                    <small>
+                            回答
+                        </small>
+                </div>
+                <!--问题是否被解决-->
+                <div class="col-md-3 col-sm-3 teaser hidden-xs">
+                    <div class="card">
+                        <span class="glyphicon glyphicon-question-sign"></span> 待解决
+                        <br/>
+                        <a href="#">
+                            <i class="icon-hand-up">
+                            </i>
+                            置顶
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <!--wrap-->
+            <li class="row">
+                <!--问题标题信息-->
+                <div class="col-md-7 col-sm-9 col-xs-12">
+                    <div class="avatar pull-left">
+                        <a href="my-center-resource.html" class="pull-left" data-toggle="tooltip" title="王炜">
+                            <img src="http://oqlse9rck.bkt.clouddn.com/avatar.jpg" class="user-img"/>
+                        </a>
+                    </div>
+                    <h2>
+                        <a href="quiz-detal.html">
+                            如何能够解决，css定位布局中，父容器不能自适应定义absolute的子元素的高度。
+                        </a>
+                        <br/>
+                        <small class="hidden-xs">
+                            <span>
+                                4月之前
+                            </span>
+                        </small>
+                        <small class="visible-xs-inline">
+                            <span>
+                                4月之前
+                            </span>
+                        </small>
+                    </h2>
+                </div>
+                <!--悬赏-->
+                <div class="col-md-1 hidden-sm hidden-xs stats">
+                    <span class="human-readable-number">
+                            9
+                        </span>
+                    <br/>
+                    <small>
+                            悬赏
+                        </small>
+                </div>
+                <!--回答-->
+                <div class="col-md-1 hidden-sm hidden-xs stats">
+                    <span class="human-readable-number">
+                            99
+                        </span>
+                    <br/>
+                    <small>
+                            回答
+                        </small>
+                </div>
+                <!--问题是否被解决-->
+                <div class="col-md-3 col-sm-3 teaser hidden-xs">
+                    <div class="card">
+                        <span class="glyphicon glyphicon-question-sign"></span> 待解决
+                        <br/>
+                        <a href="#">
+                            <i class="icon-hand-up">
+                            </i>
+                            置顶
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <!--加载更多按钮-->
+        <button class="btn btn-default btn-block btn-load-more" type="submit">
+            加载更多
+        </button>
+    </div>
+
+    <div class="footer">
+        Copyright © 2016 IT.Share All rights reserved.
+    </div>
+
+    <!--弹框——我要提问-->
+    <div class="modal" id="new-quiz" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body new-quiz-body">
+                    <div class="input-wrapper">
+                        <input type="text" placeholder="在此输入您问题的标题..." />
+                        <!--Error message-->
+                        <span class="animated fadeInRight">
+                            标题不能为空
+                        </span>
+                    </div>
+                    <!--编辑器-->
+                    <div id="text-editor" style="height: 250px;"></div>
+                    <div class="radio-wrapper clearfix">
+                        <!--按钮分类-->
+                        <div class="btn-group dropup">
+                            <button type="button" class="btn btn-default btn-sm">
+                                技术分类
+                            </button>
+                            <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="caret">
                                 </span>
-                            </a>
+                            </button>
                             <ul class="dropdown-menu">
-                                <li class="dropdown-header">
-                                    未读消息
-                                    <span class="badge">
-                                        61
-                                    </span>
-                                </li>
                                 <li>
                                     <a href="#">
-                                        未读消息1
-                                        <span class="badge">
-                                            2
-                                        </span>
+                                        1
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        未读消息2
-                                        <span class="badge">
-                                            42
-                                        </span>
+                                        1
                                     </a>
-                                </li>
-                                <li role="separator" class="divider">
                                 </li>
                                 <li>
                                     <a href="#">
-                                        注销
+                                        1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        1
                                     </a>
                                 </li>
                             </ul>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.nav-collapse -->
-            </div>
-        </nav>
-        <div class="cover">
-            <p class="quiz-title">
-                创造始于问题，有了问题才会思考，有了思考，才有解决问题的方法，才有找到独立思路的可能。 —— 陶行知
-            </p>
-            <div class="container">
-                <form role="search">
-                    <div class="form-group">
-                        <input type="text" class="form-control search" placeholder="问题搜索"/>
-                        <a href="#" class="btn-search">
-                            <span class="glyphicon glyphicon-search">
-                            </span>
-                        </a>
+                        </div>
+                        <!--按钮分类-->
+                        <div class="btn-group dropup">
+                            <button type="button" class="btn btn-default btn-sm">
+                                技术名称
+                            </button>
+                            <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="caret">
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">
+                                        1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        1
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--按钮分类-->
+                        <div class="btn-group dropup">
+                            <button type="button" class="btn btn-default btn-sm">
+                                悬赏积分
+                            </button>
+                            <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="caret">
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">
+                                        1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        1
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </form>
-            </div>
-        </div>
-        <div class="container quiz-container">
-            <div class="clearfix">
-                <button class="btn btn-primary new-quiz btn-quiz">
-                    我要提问
-                </button>
-                <div class="btn-group pull-right">
-                    <button class="btn btn-default dropdown-toggle quiz-sort" data-toggle="dropdown" type="button" aria-expanded="false">
-                        <span class="visible-sm-inline visible-md-inline visible-lg-inline">
-                            排序
-                        </span>
-                        <span class="visible-xs-inline">
-                            <span class="glyphicon glyphicon-sort">
-                            </span>
-                        </span>
-                        <span class="caret">
-                        </span>
+                </div>
+                <div class="modal-footer clearfix">
+                    <!--全屏按钮-->
+                    <a href="#" class="full-screen-btn">
+                        <div class="full-screen pull-left">
+                            <span class="glyphicon glyphicon-chevron-up" id="icon-btn"></span>
+                        </div>
+                    </a>
+                    <button type="button" class="btn btn-default" id="quiz-close">
+                        Close
                     </button>
-                    <ul class="dropdown-menu pull-right">
-                        <li>
-                            <a href="#">
-                                从新到旧
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                从旧到新
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                最多回复
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <button class="btn btn-warning pull-right quiz-screen" type="button" data-toggle="collapse" data-target="#collapseScreen">
-                    问题筛选
-                </button>
-                <div class="collapse" id="collapseScreen">
-                    <div class="well clearfix">
-                        <div class="col-sm-1 col-xs-12 all">
-                            是否解决:
-                        </div>
-                        <div class="col-sm-11 col-xs-12">
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        是
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        否
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-1 col-xs-12 all">
-                            提问分类:
-                        </div>
-                        <div class="col-sm-11 col-xs-12">
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        求资源
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        求答案
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-1 col-xs-12 all">
-                            总分类:
-                        </div>
-                        <div class="col-sm-11 col-xs-12">
-                            <ul>
-                                <li class="active">
-                                    <a href="#">
-                                        大板块1
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        大板块2
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        大板块3
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        大板块4
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        大板块5
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        大板块6
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-1 col-xs-12 all">
-                            子分类:
-                        </div>
-                        <div class="col-sm-11 col-xs-12">
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        子板块1
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        子板块2
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        子板块3
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        子板块4
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        子板块5
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        子板块6
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        子板块6
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        子板块6
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        子板块6
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        子板块6
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        子板块6
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        子板块6
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr/>
-            <p>
-                全部
-            </p>
-            <ul class="quiz-list">
-                <li class="row">
-                    <div class="col-md-7 col-sm-9 col-xs-12">
-                        <div class="avatar pull-left">
-                            <a href="my-center-resource.html" class="pull-left" data-toggle="tooltip" title="王炜">
-                                <img src="http://oqlse9rck.bkt.clouddn.com/avatar.jpg" class="user-img"/>
-                            </a>
-                        </div>
-                        <h2>
-                            <a href="quiz-detal.html">
-                                如何能够解决，css定位布局中，父容器不能自适应定义absolute的子元素的高度。
-                            </a>
-                            <br/>
-                            <small class="hidden-xs">
-                                <span>
-                                    4月之前
-                                </span>
-                            </small>
-                            <small class="visible-xs-inline">
-                                <span>
-                                    4月之前
-                                </span>
-                            </small>
-                        </h2>
-                    </div>
-                    <div class="col-md-1 hidden-sm hidden-xs stats">
-                        <span class="human-readable-number">
-                            9
-                        </span>
-                        <br/>
-                        <small>
-                            悬赏
-                        </small>
-                    </div>
-                    <div class="col-md-1 hidden-sm hidden-xs stats">
-                        <span class="human-readable-number">
-                            99
-                        </span>
-                        <br/>
-                        <small>
-                            回答
-                        </small>
-                    </div>
-                    <div class="col-md-3 col-sm-3 teaser hidden-xs">
-                        <div class="card">
-                            <span class="glyphicon glyphicon-question-sign">
-                            </span>
-                            待解决
-                            <br/>
-                            <a href="#">
-                                <i class="icon-hand-up">
-                                </i>
-                                置顶
-                            </a>
-                        </div>
-                    </div>
-                </li>
-                <li class="row">
-                    <div class="col-md-7 col-sm-9 col-xs-12">
-                        <div class="avatar pull-left">
-                            <a href="my-center-resource.html" class="pull-left" data-toggle="tooltip" title="王炜">
-                                <img src="http://oqlse9rck.bkt.clouddn.com/avatar.jpg" class="user-img"/>
-                            </a>
-                        </div>
-                        <h2>
-                            <a href="quiz-detal.html">
-                                如何能够解决，css定位布局中，父容器不能自适应定义absolute的子元素的高度。
-                            </a>
-                            <br/>
-                            <small class="hidden-xs">
-                                <span>
-                                    4月之前
-                                </span>
-                            </small>
-                            <small class="visible-xs-inline">
-                                <span>
-                                    4月之前
-                                </span>
-                            </small>
-                        </h2>
-                    </div>
-                    <div class="col-md-1 hidden-sm hidden-xs stats">
-                        <span class="human-readable-number">
-                            9
-                        </span>
-                        <br/>
-                        <small>
-                            悬赏
-                        </small>
-                    </div>
-                    <div class="col-md-1 hidden-sm hidden-xs stats">
-                        <span class="human-readable-number">
-                            99
-                        </span>
-                        <br/>
-                        <small>
-                            回答
-                        </small>
-                    </div>
-                    <div class="col-md-3 col-sm-3 teaser hidden-xs">
-                        <div class="card">
-                            <span class="glyphicon glyphicon-ok-sign">
-                            </span>
-                            已解决
-                            <br/>
-                            <a href="#">
-                                <i class="icon-hand-up">
-                                </i>
-                                置顶
-                            </a>
-                        </div>
-                    </div>
-                </li>
-                <li class="row">
-                    <div class="col-md-7 col-sm-9 col-xs-12">
-                        <div class="avatar pull-left">
-                            <a href="my-center-resource.html" class="pull-left" data-toggle="tooltip" title="王炜">
-                                <img src="http://oqlse9rck.bkt.clouddn.com/avatar.jpg" class="user-img"/>
-                            </a>
-                        </div>
-                        <h2>
-                            <a href="quiz-detal.html">
-                                如何能够解决，css定位布局中，父容器不能自适应定义absolute的子元素的高度。
-                            </a>
-                            <br/>
-                            <small class="hidden-xs">
-                                <span>
-                                    4月之前
-                                </span>
-                            </small>
-                            <small class="visible-xs-inline">
-                                <span>
-                                    4月之前
-                                </span>
-                            </small>
-                        </h2>
-                    </div>
-                    <div class="col-md-1 hidden-sm hidden-xs stats">
-                        <span class="human-readable-number">
-                            9
-                        </span>
-                        <br/>
-                        <small>
-                            悬赏
-                        </small>
-                    </div>
-                    <div class="col-md-1 hidden-sm hidden-xs stats">
-                        <span class="human-readable-number">
-                            99
-                        </span>
-                        <br/>
-                        <small>
-                            回答
-                        </small>
-                    </div>
-                    <div class="col-md-3 col-sm-3 teaser hidden-xs">
-                        <div class="card">
-                            <span class="glyphicon glyphicon-ok-sign">
-                            </span>
-                            已解决
-                            <br/>
-                            <a href="#">
-                                <i class="icon-hand-up">
-                                </i>
-                                置顶
-                            </a>
-                        </div>
-                    </div>
-                </li>
-                <li class="row">
-                    <div class="col-md-7 col-sm-9 col-xs-12">
-                        <div class="avatar pull-left">
-                            <a href="my-center-resource.html" class="pull-left" data-toggle="tooltip" title="王炜">
-                                <img src="http://oqlse9rck.bkt.clouddn.com/avatar.jpg" class="user-img"/>
-                            </a>
-                        </div>
-                        <h2>
-                            <a href="quiz-detal.html">
-                                如何能够解决，css定位布局中，父容器不能自适应定义absolute的子元素的高度。
-                            </a>
-                            <br/>
-                            <small class="hidden-xs">
-                                <span>
-                                    4月之前
-                                </span>
-                            </small>
-                            <small class="visible-xs-inline">
-                                <span>
-                                    4月之前
-                                </span>
-                            </small>
-                        </h2>
-                    </div>
-                    <div class="col-md-1 hidden-sm hidden-xs stats">
-                        <span class="human-readable-number">
-                            9
-                        </span>
-                        <br/>
-                        <small>
-                            悬赏
-                        </small>
-                    </div>
-                    <div class="col-md-1 hidden-sm hidden-xs stats">
-                        <span class="human-readable-number">
-                            99
-                        </span>
-                        <br/>
-                        <small>
-                            回答
-                        </small>
-                    </div>
-                    <div class="col-md-3 col-sm-3 teaser hidden-xs">
-                        <div class="card">
-                            <span class="glyphicon glyphicon-ok-sign">
-                            </span>
-                            已解决
-                            <br/>
-                            <a href="#">
-                                <i class="icon-hand-up">
-                                </i>
-                                置顶
-                            </a>
-                        </div>
-                    </div>
-                </li>
-                <li class="row">
-                    <div class="col-md-7 col-sm-9 col-xs-12">
-                        <div class="avatar pull-left">
-                            <a href="my-center-resource.html" class="pull-left" data-toggle="tooltip" title="王炜">
-                                <img src="http://oqlse9rck.bkt.clouddn.com/avatar.jpg" class="user-img"/>
-                            </a>
-                        </div>
-                        <h2>
-                            <a href="quiz-detal.html">
-                                如何能够解决，css定位布局中，父容器不能自适应定义absolute的子元素的高度。
-                            </a>
-                            <br/>
-                            <small class="hidden-xs">
-                                <span>
-                                    4月之前
-                                </span>
-                            </small>
-                            <small class="visible-xs-inline">
-                                <span>
-                                    4月之前
-                                </span>
-                            </small>
-                        </h2>
-                    </div>
-                    <div class="col-md-1 hidden-sm hidden-xs stats">
-                        <span class="human-readable-number">
-                            9
-                        </span>
-                        <br/>
-                        <small>
-                            悬赏
-                        </small>
-                    </div>
-                    <div class="col-md-1 hidden-sm hidden-xs stats">
-                        <span class="human-readable-number">
-                            99
-                        </span>
-                        <br/>
-                        <small>
-                            回答
-                        </small>
-                    </div>
-                    <div class="col-md-3 col-sm-3 teaser hidden-xs">
-                        <div class="card">
-                            <span class="glyphicon glyphicon-ok-sign">
-                            </span>
-                            已解决
-                            <br/>
-                            <a href="#">
-                                <i class="icon-hand-up">
-                                </i>
-                                置顶
-                            </a>
-                        </div>
-                    </div>
-                </li>
-                <li class="row">
-                    <div class="col-md-7 col-sm-9 col-xs-12">
-                        <div class="avatar pull-left">
-                            <a href="my-center-resource.html" class="pull-left" data-toggle="tooltip" title="王炜">
-                                <img src="http://oqlse9rck.bkt.clouddn.com/avatar.jpg" class="user-img"/>
-                            </a>
-                        </div>
-                        <h2>
-                            <a href="quiz-detal.html">
-                                如何能够解决，css定位布局中，父容器不能自适应定义absolute的子元素的高度。
-                            </a>
-                            <br/>
-                            <small class="hidden-xs">
-                                <span>
-                                    4月之前
-                                </span>
-                            </small>
-                            <small class="visible-xs-inline">
-                                <span>
-                                    4月之前
-                                </span>
-                            </small>
-                        </h2>
-                    </div>
-                    <div class="col-md-1 hidden-sm hidden-xs stats">
-                        <span class="human-readable-number">
-                            9
-                        </span>
-                        <br/>
-                        <small>
-                            悬赏
-                        </small>
-                    </div>
-                    <div class="col-md-1 hidden-sm hidden-xs stats">
-                        <span class="human-readable-number">
-                            99
-                        </span>
-                        <br/>
-                        <small>
-                            回答
-                        </small>
-                    </div>
-                    <div class="col-md-3 col-sm-3 teaser hidden-xs">
-                        <div class="card">
-                            <span class="glyphicon glyphicon-ok-sign">
-                            </span>
-                            已解决
-                            <br/>
-                            <a href="#">
-                                <i class="icon-hand-up">
-                                </i>
-                                置顶
-                            </a>
-                        </div>
-                    </div>
-                </li>
-                <li class="row">
-                    <div class="col-md-7 col-sm-9 col-xs-12">
-                        <div class="avatar pull-left">
-                            <a href="my-center-resource.html" class="pull-left" data-toggle="tooltip" title="王炜">
-                                <img src="http://oqlse9rck.bkt.clouddn.com/avatar.jpg" class="user-img"/>
-                            </a>
-                        </div>
-                        <h2>
-                            <a href="quiz-detal.html">
-                                如何能够解决，css定位布局中，父容器不能自适应定义absolute的子元素的高度。
-                            </a>
-                            <br/>
-                            <small class="hidden-xs">
-                                <span>
-                                    4月之前
-                                </span>
-                            </small>
-                            <small class="visible-xs-inline">
-                                <span>
-                                    4月之前
-                                </span>
-                            </small>
-                        </h2>
-                    </div>
-                    <div class="col-md-1 hidden-sm hidden-xs stats">
-                        <span class="human-readable-number">
-                            9
-                        </span>
-                        <br/>
-                        <small>
-                            悬赏
-                        </small>
-                    </div>
-                    <div class="col-md-1 hidden-sm hidden-xs stats">
-                        <span class="human-readable-number">
-                            99
-                        </span>
-                        <br/>
-                        <small>
-                            回答
-                        </small>
-                    </div>
-                    <div class="col-md-3 col-sm-3 teaser hidden-xs">
-                        <div class="card">
-                            <span class="glyphicon glyphicon-ok-sign">
-                            </span>
-                            已解决
-                            <br/>
-                            <a href="#">
-                                <i class="icon-hand-up">
-                                </i>
-                                置顶
-                            </a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <button class="btn btn-default btn-block btn-load-more" type="submit">
-                加载更多
-            </button>
-        </div>
-        <div class="footer">
-            Copyright © 2016 IT.Share All rights reserved.
-        </div>
-        <div class="modal" id="new-quiz" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body new-quiz-body">
-                        <div class="input-wrapper">
-                            <input type="text" placeholder="在此输入您问题的标题..." />
-                            <span class="animated fadeInRight">
-                                标题不能为空
-                            </span>
-                        </div>
-                        <div id="text-editor" style="height: 250px;" >
-                        </div>
-                        <div class="radio-wrapper clearfix">
-                            <div class="btn-group dropup">
-                                <button type="button" class="btn btn-default btn-sm">
-                                    技术分类
-                                </button>
-                                <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span class="caret">
-                                    </span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="#">
-                                            1
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            1
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            1
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            1
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="btn-group dropup">
-                                <button type="button" class="btn btn-default btn-sm">
-                                    技术名称
-                                </button>
-                                <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span class="caret">
-                                    </span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="#">
-                                            1
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            1
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            1
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            1
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="btn-group dropup">
-                                <button type="button" class="btn btn-default btn-sm">
-                                    悬赏积分
-                                </button>
-                                <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span class="caret">
-                                    </span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="#">
-                                            1
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            1
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            1
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            1
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer clearfix">
-                        <a href="#" class="full-screen-btn">
-                            <div class="full-screen pull-left">
-                                <span class="glyphicon glyphicon-chevron-up" id="icon-btn">
-                                </span>
-                            </div>
-                        </a>
-                        <button type="button" class="btn btn-default" id="quiz-close">
-                            Close
-                        </button>
-                        <button type="button" class="btn btn-primary">
-                            提问
-                        </button>
-                    </div>
+                    <button type="button" class="btn btn-primary">
+                        提问
+                    </button>
                 </div>
             </div>
         </div>
-        <script src="js/TothingWay.js">
-        </script>
-        <script src="js/function.js">
-        </script>
-    </body>
+    </div>
+    
+    <script src="js/TothingWay.js">
+    </script>
+    <script src="js/function.js">
+    </script>
+</body>
+
 </html>
