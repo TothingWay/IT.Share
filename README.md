@@ -40,7 +40,7 @@
 
 > 这里把整站内有用的资源整合起来，通过用户推荐和管理员整合的形式，把分散的资源整理成一套教程供用户参考，教程资源的来源可以是论坛分享的技术热帖，也可以是问答中已被解决的问题，还可以是一个具体的资源，如一本PDF。
 
-##Technology
+<h2>Technology</h2>
 
 - BootStrap
 - jQuery
@@ -50,11 +50,11 @@
 - animate.css
 
 
-##Status
+<h2>Status</h2>
 
 [![CSS Hack](http://oqlse9rck.bkt.clouddn.com/browser.svg)](http://oqlse9rck.bkt.clouddn.com/browser.svg)
 
-##Responsive design
+<h2>Responsive design</h2>
 
 <img src="http://oqlse9rck.bkt.clouddn.com/responsiveDesign.svg" width=100 height=100>
 
