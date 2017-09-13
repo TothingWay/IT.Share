@@ -52,7 +52,7 @@
 
 <h2>Status</h2>
 
-<img src="http://oqlse9rck.bkt.clouddn.com/browser.svg" width=750>
+<img src="http://oqlse9rck.bkt.clouddn.com/browser.svg" width=600>
 
 <h2>Responsive design</h2>
 
