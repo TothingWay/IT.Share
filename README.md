@@ -52,7 +52,7 @@
 
 <h2>Status</h2>
 
-[![CSS Hack](http://oqlse9rck.bkt.clouddn.com/browser.svg)](http://oqlse9rck.bkt.clouddn.com/browser.svg)
+<img src="http://oqlse9rck.bkt.clouddn.com/browser.svg" width=750>
 
 <h2>Responsive design</h2>
 
