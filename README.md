@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="http://www.tothingway.me/IT.Share/Front-End/index.html">
+  <a href="http://123.206.178.158/IT.Share/Front-End/">
     <img src="http://oqlse9rck.bkt.clouddn.com/logo.svg" width=127 height=72>
   </a>
 
@@ -9,7 +9,7 @@
     浙江省多媒体大赛15届本科网站组一等奖作品<br>IT资源分享网站
     <br>
     <br>
-    <a href="http://www.tothingway.me/IT.Share/Front-End/index.html"><strong>Visit IT.Share &raquo;</strong></a>
+    <a href="http://123.206.178.158/IT.Share/Front-End/"><strong>Visit IT.Share &raquo;</strong></a>
   </p>
 </p>
 
